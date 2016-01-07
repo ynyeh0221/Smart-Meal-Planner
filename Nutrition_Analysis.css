@@ -1,0 +1,662 @@
+
+body{
+  background-color:white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment:fixed;
+ }
+ 
+ h1{
+  font-family: 'Racing Sans One', cursive;
+  font-weight: normal; 
+  }
+
+h3{
+  font-family: 'Racing Sans One', cursive;
+  font-weight: normal; 
+  }
+
+
+
+#div1:hover
+{
+    position: relative; top: 5px;left:5px
+}
+
+#div2:hover
+{
+    position: relative; top: 5px;left:5px
+}
+
+#div3:hover
+{
+    position: relative; top: 5px;left:5px
+}
+
+#div4:hover
+{
+    position: relative; top: 5px;left:5px
+}
+
+#div5:hover
+{
+    position: relative; top: 5px;left:5px
+}
+
+#div6:hover
+{
+    position: relative; top: 5px;left:5px
+}
+
+#div7:hover
+{
+    position: relative; top: 5px;left:5px
+}
+
+#div8:hover
+{
+    position: relative; top: 5px;left:5px
+}
+
+#div9:hover
+{
+    position: relative; top: 5px;left:5px
+}
+
+
+
+
+.ccc
+{
+  border:double 7px #e0e0e0;
+  padding:5%;
+  text-align:left;
+  margin-top:2.6%;
+  margin-left:10%;
+  margin-right:10%;
+  padding-top: 3.7%;
+  overflow:hidden;
+}
+ 
+.background {
+    fill: #FFFFFF;
+    fill-opacity: 0.01;
+    color:white;
+    
+}
+
+
+.component {
+    fill: #e1e1e1;
+}
+
+.modal .component .label {
+    font-family: 'Palanquin', sans-serif;
+    text-anchor: middle;
+    fill: black;
+}
+
+
+.component .label {
+    font-family: 'Palanquin', sans-serif;
+    text-anchor: middle;
+    fill: black;
+}
+
+.arc {
+    stroke-weight:0.1;
+    fill: #4e8fff;
+    color:black;
+}
+
+
+.arc2 {
+    stroke-weight:0.1;
+    fill: #3660b0;
+    color:black;
+}
+
+
+.label {
+    font-family: 'Palanquin', sans-serif;
+    text-anchor: middle;
+    fill:black;
+}
+
+.modal .label {
+    font-family: 'Palanquin', sans-serif;
+    text-anchor: middle;
+    fill:black;
+}
+
+.radial-svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.table-2 thead, .table-2 tr {
+border-top-width: 3px;
+border-top-style: solid;
+border-top-color: rgba(230, 189, 189,0.25);
+}
+.table-2 {
+width:80%;
+height:60%;
+border-bottom-width: 5px;
+border-bottom-style: solid;
+border-bottom-color: rgba(230, 189, 189,0.25);
+text-align:center;
+table-layout: fixed;
+background-color:rgba(255,255,255,0);
+}
+
+/* Padding and font style */
+.table-2 td, .table-2 th {
+font-family: 'Palanquin', sans-serif;
+color: #202020;
+background-color:rgba(255,255,255,0.55);
+}
+
+/* Alternating background colors */
+.table-2 tr:nth-child(even) {
+}
+.table-2 tr:nth-child(odd) {
+}
+
+		.modal h1
+        {
+            display: block;
+            color: black;
+            font-family: 'Racing Sans One', cursive;
+            font-weight: normal; 
+            text-align:center;
+        }
+        
+        
+		.modal h3{
+		    color:black;
+            font-family: 'Racing Sans One', cursive;
+            font-weight: normal; 
+            text-align:center;
+		 }
+		
+		#container {
+		 text-align:center;
+		 width:100%; 
+		 }
+         
+		 #main {
+		 text-align:center;
+		 width:100%;		 
+		 }
+
+        #test .arc2 {
+            stroke-weight:0.1;
+            fill: #3660b0;
+        }
+
+        #outer {
+            background:#FFF1FF;
+            border-radius: 0px;
+            color: #000;
+			
+        }
+
+        #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div1ex{
+            margin-left:17%;
+            width: 33%;
+            box-sizing: border-box;
+            float: left;
+        }
+		
+		#div1 .arc {
+            stroke-weight: 0.1;
+            fill: #FF0000;
+        }
+		#div1 .arc2 {
+            stroke-weight: 0.1;
+            fill: #990000;
+        }
+		
+		#div1ex .arc {
+            stroke-weight: 0.1;
+            fill: #FF0000;
+        }
+		#div1ex .arc2 {
+            stroke-weight: 0.1;
+            fill: #990000;
+        }
+
+        #div2 .arc {
+            stroke-weight: 0.1;
+            fill: #FF8000;
+        }
+		#div2 .arc2 {
+            stroke-weight: 0.1;
+            fill: #994C00;
+        }
+
+        #div3 .arc {
+            stroke-weight: 0.1;
+            fill: #FFFF00;
+        }
+		#div3 .arc2 {
+            stroke-weight: 0.1;
+            fill: #999900;
+        }
+		
+		#div4 .arc {
+            stroke-weight: 0.1;
+            fill: #80FF00;
+        }
+		#div4 .arc2 {
+            stroke-weight: 0.1;
+            fill: #4C9900;
+        }
+
+        #div5 .arc {
+            stroke-weight: 0.1;
+            fill: #00FF00;
+        }
+		#div5 .arc2 {
+            stroke-weight: 0.1;
+            fill: #009900;
+        }
+
+        #div6 .arc {
+            stroke-weight: 0.1;
+            fill: #00FF80;
+        }
+		#div6 .arc2 {
+            stroke-weight: 0.1;
+            fill: #00994C;
+        }
+		
+		#div7 .arc {
+            stroke-weight: 0.1;
+            fill: #0080FF;
+        }
+		#div7 .arc2 {
+            stroke-weight: 0.1;
+            fill: #004C99;
+        }
+
+        #div8 .arc {
+            stroke-weight: 0.1;
+            fill: #7F00FF;
+        }
+		#div8 .arc2 {
+            stroke-weight: 0.1;
+            fill: #4C0099;
+        }
+
+        #div9 .arc {
+            stroke-weight: 0.1;
+            fill: #FF007F;
+        }
+		#div9 .arc2 {
+            stroke-weight: 0.1;
+            fill: #99004C;
+        }
+
+        .selectedRadial{
+		    width:500px;
+        }
+
+        .radial {
+            border-radius: 3px;
+            background: #FFFFFF;
+            color: #000;
+
+        }
+        
+        
+        
+@media only screen and (min-width: 200px) {
+  h1{
+    font-size: 71%;
+    line-height:14px;
+  }
+h3
+  {
+    font-size:37.5%;
+    line-height:34%;
+  }
+
+.table-2 td, .table-2 th {
+font-size: 6%;
+height:8px;
+}
+.modal .component .label {
+    font-size:20.4%;
+}
+.component .label {
+    font-size:20.4%;
+}
+.label {
+    font-size:3.5px;
+}
+
+.modal .label {
+    font-size:3.5px;
+}
+
+.modal h3{
+    padding-top: 3.5px;
+    font-size: 37%;
+}
+#container {
+	margin-top:7px;
+}
+         
+#main {
+	margin-top:7px;	 
+}
+#div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div1ex{
+    height: 34px;
+}
+.selectedRadial{
+    width:85px;
+}
+li{
+  font-size:25.5%;
+  line-height:25.5%;
+  padding-left:2px;
+ }
+ 
+ li li{
+  font-size:100%;
+  line-height:100%;
+  padding-left:2px;
+ }
+ .modal
+ {
+  width:94px;
+  height:94px;
+  
+ }
+  .ccc
+ {
+ border-radius:8.5px;
+ }
+ select
+{
+	font-size: 20.4%;
+    font-family: 'Palanquin', sans-serif;
+	height:6.8px;
+	width:37%;
+}
+#ddd
+{
+    padding:5px;
+}
+}
+
+
+
+@media only screen and (min-width: 300px) {
+  h1{
+    font-size: 110%;
+    line-height:21px;
+  }
+h3
+  {
+    font-size:57%;
+    line-height:52%;
+  }
+  .myButton {
+  border-radius: 9px;
+  font-size:42%;
+  font-weight:bold;
+  width: 130px;
+  height:18px;
+  top:calc(50% - 5px);
+  padding: 5px;
+}
+ .myButton3 {
+  border-radius: 6.5px;
+  font-size:40%;
+  width: 52px;
+  height:13px;
+  top:calc(50% - 15px);
+  padding:2.6px;
+}
+.table-2 td, .table-2 th {
+font-size: 30%;
+height:13px;
+}
+.modal .component .label {
+    font-size:31%;
+}
+.component .label {
+    font-size:31%;
+}
+.label {
+    font-size:5px;
+}
+
+.modal .label {
+    font-size:5px;
+}  
+        
+.modal h3{
+    padding-top: 5px;
+    font-size: 57%;
+}
+#container {
+	margin-top:10.4px;
+}
+         
+#main {
+	margin-top:10.4px; 
+}
+#div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div1ex{
+    height: 52px;
+}
+.selectedRadial{
+    width:130px;
+}
+li{
+  font-size:40%;
+  line-height:40%;
+  padding-left:3px;
+ }
+ 
+ li li{
+  font-size:100%;
+  line-height:100%;
+  padding-left:3px;
+ }
+ .modal
+ {
+  width:143px;
+  height:143px;
+  
+ }
+  .ccc
+ {
+ border-radius:13px;
+ }
+ select
+{
+	font-size: 31%;
+    font-family: 'Palanquin', sans-serif;
+	height:10.4px;
+	width:37%;
+}
+#ddd
+{
+    padding:8px;
+}
+}
+
+
+@media only screen and (min-width: 768px) {
+  h1{
+    font-size: 278%;
+    line-height:53px;
+  }
+h3{
+    font-size: 145%;
+    line-height:132%;
+  }
+.table-2 td, .table-2 th {
+font-size: 70%;
+height:33px;
+}
+.modal .component .label {
+    font-size:80%;
+}
+.component .label {
+    font-size:80%;
+}
+.label {
+    font-size:13px;
+}
+
+.modal .label {
+    font-size:13px;
+}
+        
+.modal h3{
+    padding-top: 13px;
+    font-size: 145%;
+}
+#container {
+	margin-top:26px;
+}
+         
+#main {
+	margin-top:26px;	 
+}
+#div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div1ex{
+    height: 132px;
+}
+.selectedRadial{
+    width:330px;
+}
+li{
+  font-size:100%;
+  line-height:100%;
+  padding-left:6.6px;
+ }
+ 
+ li li{
+  font-size:100%%;
+  line-height:100%;
+  padding-left:6.6px;
+ }
+ .modal
+ {
+  width:363px;
+  height:363px;
+  
+ }
+  .ccc
+ {
+ border-radius:33px;
+ }
+ select
+{
+	font-size: 80%;
+    font-family: 'Palanquin', sans-serif;
+	height:26.4px;
+	width:37%;
+}
+#ddd
+{
+    padding:20px;
+}
+}
+
+
+@media only screen and (min-width: 1170px) {
+  h1{
+    font-size: 420%;
+    font-weight: 300;
+    line-height:55px;
+  }
+h3{
+    font-size: 220%;
+    line-height:80%;
+  }
+.table-2
+{
+  margin-left:50px;
+  padding:30px;
+}
+.table-2 td, .table-2 th {
+font-size: 100%;
+height:50px;
+}
+.modal .component .label {
+    font-size:120%;
+}
+.component .label {
+    font-size:120%;
+}
+.label {
+    font-size:20px;
+}
+
+.modal .label {
+    font-size:20px;
+}
+.modal h3
+{
+    padding-top: 20px;
+    font-size: 220%;
+}    
+#container {
+	margin-top:40px;
+}
+         
+#main {
+	margin-top:40px;
+	margin-left:23%;	 
+}
+#div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div1ex{
+    height: 200px;
+}
+.selectedRadial{
+    width:500px;
+}
+li{
+  font-size:150%;
+  line-height:150%;
+  padding-left:10px;
+ }
+ 
+ li li{
+  font-size:100%;
+  line-height:150%;
+  padding-left:10px;
+ }
+ .modal
+ {
+  width:550px;
+  height:550px;
+  
+ }
+ .ccc
+ {
+ border-radius:50px;
+ }
+ select
+{
+	font-size: 120%;
+    font-family: 'Palanquin', sans-serif;
+	height:40px;
+	width:37%;
+}
+#ddd
+{
+    padding:30px;
+}
+.ttttt td, .ttttt th
+{
+    padding-top:20px;
+}
+}

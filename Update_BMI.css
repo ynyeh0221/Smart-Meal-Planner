@@ -1,0 +1,374 @@
+/*steps*/
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+
+body{
+  font-size:medium;
+  line-height:100%;
+ }
+
+select
+{
+  font-family: 'Palanquin', sans-serif;
+  overflow:hidden;
+  width:95%;
+}
+
+.title2{
+  display: block;
+  color: #F8F8F8;
+  text-shadow: -1px -1px 0 #fff,1px 1px 0 #333,1px 1px 0 #444;
+  margin-top: 0px;
+  font-family: 'Racing Sans One', cursive;
+  font-weight: normal; 
+   font-size:420%;
+   
+}
+
+.subtitle2{
+  display: block;
+  color: #F8F8F8;
+  margin-top: 0px;
+  font-family: 'Racing Sans One', cursive;
+  font-weight:100;
+  font-size: 220%;
+  line-height:200%;
+}
+li{
+  font-size:150%;
+  line-height:150%;
+  padding-left::0.7%;
+ }
+
+#c{
+  margin-top:5%;
+  margin-left:15%;
+  margin-right:15%;
+  padding-top: 0.7%;
+  background-color: rgba(255,255,255,0);
+  height:700px;
+  text-align:center;
+}
+
+#d{
+  margin-top:8%;
+  margin-left:15%;
+  margin-right:15%;
+  padding-top: 0.7%;
+  background-color: rgba(255,255,255,0);
+  height:100%;
+  text-align:left;
+}
+
+ 
+
+* {
+    box-sizing: border-box;
+}
+ 
+/* Border styles */
+#table-2 tr {
+border-top-width: 0.5%;
+border-top-style: double;
+border-top-color: rgba(255,255,255,0.2);
+}
+#table-2 {
+width:95%;
+height:60%;
+border:0px double white;
+padding:1.5%;
+text-align:left;
+table-layout: fixed;
+background-color:rgba(255,255,255,0);
+}
+
+/* Padding and font style */
+#table-2 td, #table-2 th {
+padding: 0.3% 1.5%;
+font-family: 'Cabin Condensed', sans-serif;
+color: white;
+background-color:rgba(255,255,255,0);
+}
+
+/* Alternating background colors */
+#table-2 tr:nth-child(even) {
+}
+#table-2 tr:nth-child(odd) {
+}
+
+.myButton {
+  display: inline-block;
+  background-color:rgba(0,0,0,0.1);
+  border-radius: 35px;
+  font-size:160%;
+  font-weight:bold;
+  width: 38%;
+  color: #fff;
+  border: 2.2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+  overflow:hidden;
+}
+.myButton:hover {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+  text-decoration:none;
+  border:double 2.2px #202020;
+}
+.myButton:active {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+  text-decoration:none;
+}
+
+.myButton2 {
+	display:inline-block;
+    border-radius:99em;
+	cursor:pointer;
+    background-color:white;
+    border:7px double #202020;
+	color:#202020;
+	font-family: 'Racing Sans One', cursive;
+	font-size:1.3em;
+    font-weight:500;
+	padding:30px;
+    top:calc(50% - 15px);
+    width:150px;
+    height:150px;
+    text-decoration:none;
+    overflow:hidden;
+    min-width:300px;
+    max-width:600px;
+}
+.myButton2:hover {
+    position:relative;
+    top:5px;
+    text-decoration:none;
+}
+.myButton2:active {
+	position:relative;
+	top:3px;
+    text-decoration:none;
+}
+
+.myButton3 {
+  display: inline-block;
+  background:transparent;
+  font-weight:bold;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+  overflow:hidden;
+}
+.myButton3:hover {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+  text-decoration:none;
+  border:double 2px #202020;
+}
+.myButton3:active {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+  text-decoration:none;
+}
+@media only screen and (min-width: 200px) {
+  .title2{
+    font-size: 71%;
+    line-height:9.5px;
+  }
+  .subtitle2
+  {
+    font-size:37.5%;
+    line-height:14%;
+  }
+  .myButton {
+  border-radius: 6px;
+  font-size:27%;
+  font-weight:bold;
+  width: 85px;
+  height:12px;
+  top:calc(50% - 2.5px);
+  padding: 3.4px;
+}
+ .myButton3 {
+  border-radius: 4.5px;
+  font-size:26%;
+  width: 34px;
+  height:8.5px;
+  top:calc(50% - 2.5px);
+  padding:2px;
+}
+#table-2
+{
+  height:60px;
+}
+#table-2 td, #table-2 th {
+font-size: 31%;
+height:12px;
+}
+.ini
+{
+    width:5px;
+    height:3.5px;
+}
+select
+{
+  font-size:12%;
+  height:6.8px;	
+
+}
+}
+
+@media only screen and (min-width: 300px) {
+  .title2{
+    font-size: 110%;
+    line-height:14px;
+  }
+  .subtitle2
+  {
+    font-size:57%;
+    line-height:21%;
+  }
+  .myButton {
+  border-radius: 9px;
+  font-size:42%;
+  font-weight:bold;
+  width: 130px;
+  height:18px;
+  top:calc(50% - 5px);
+  padding: 5px;
+}
+ .myButton3 {
+  border-radius: 6.5px;
+  font-size:40%;
+  width: 52px;
+  height:13px;
+  top:calc(50% - 4px);
+  padding:2.6px;
+}
+#table-2
+{
+  height:91px;
+}
+#table-2 td, #table-2 th {
+font-size: 47%;
+height:19px;
+}
+.ini
+{
+    width:9px;
+    height:5px;
+}
+select
+{
+  font-size:19%;
+  height:10.5px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+  .title2{
+    font-size: 278%;
+    line-height:36px;
+  }
+  .subtitle2{
+    font-size: 145%;
+    line-height:53%;
+  }
+  .myButton {
+  border-radius: 23px;
+  font-size:106%;
+  font-weight:bold;
+  width: 330px;
+  height:46px;
+  top:calc(50% - 10px);
+  padding: 13.5px;
+}
+ .myButton3 {
+  border-radius: 16.5px;
+  font-size:101%;
+  width: 132px;
+  height:33px;
+  top:calc(50% - 10px);
+  padding:7px;
+}
+#table-2
+{
+  height:231px;
+}
+#table-2 td, #table-2 th {
+font-size: 119%;
+height:46px;
+}
+.ini
+{
+    width:20px;
+    height:13px;
+}
+select
+{
+  font-size:46%;
+  height:26.5px;	
+}
+}
+@media only screen and (min-width: 1170px) {
+  .title2{
+    font-size: 420%;
+    font-weight: 300;
+    line-height:55px;
+  }
+  .subtitle2{
+    font-size: 220%;
+    line-height:80%;
+  }
+  .myButton {
+  border-radius: 35px;
+  font-size:160%;
+  font-weight:bold;
+  width: 450px;
+  height:70px;
+  top:calc(50% - 15px);
+  padding: 20px;
+}
+ .myButton3 {
+  border-radius: 25px;
+  font-size:153%;
+  width: 200px;
+  height:50px;
+  top:calc(50% - 15px);
+  padding:10px;
+}
+#table-2
+{
+  height:350px;
+}
+#table-2 td, #table-2 th {
+font-size: 180%;
+height:70px;
+}
+.ini
+{
+    width:30px;
+    height:20px;
+}
+select
+{
+  font-size:70%;
+  height:40px;	
+}
+}

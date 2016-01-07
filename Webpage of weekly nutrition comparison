@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<!--This page is designed and built by Yi-Nung Yeh-->
+
+<head>
+<meta charset="utf-8">
+<title>weekly analysis</title>
+<link href="bootstrap.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Palanquin:700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Sigmar+One%7CFredericka+the+Great%7CCabin+Sketch%7CDenk+One%7CRacing+Sans+One%7CCarter+One%7CLemon%7CKnewave' rel='stylesheet' type='text/css'>
+	
+<style>
+
+body{
+
+height:2500px;
+font-size:medium;
+ }
+ 
+h1{
+  font-size:420%;
+  line-height:480%;
+ }
+
+h3{
+  display: block;
+  color: black;
+   
+  margin-top: 0px;
+  font-family: 'Racing Sans One', cursive;
+  font-weight: normal; 
+  font-size: 250%;
+  line-height:220%;
+  }
+
+li{
+  font-size:150%;
+  line-height:150%;
+  padding-left::10px;
+ }
+
+.bgClip {
+    background: -webkit-linear-gradient(transparent, transparent), url(133.jpg);
+    background: -o-linear-gradient(transparent, transparent);
+	background-repeat:repeat-x;
+    background-position:0 0;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	color: black;
+  	text-align:center;
+    font-family:'Racing Sans One', cursive;
+	font-weight: normal; 
+	line-height:80px;
+  	margin: 0;
+    -webkit-animation:BackgroundAnimated 15s linear infinite;
+    -moz-animation:BackgroundAnimated 15s linear infinite;
+    -ms-animation:BackgroundAnimated 15s linear infinite;
+    -o-animation:BackgroundAnimated 15s linear infinite;
+    animation:BackgroundAnimated 15s linear infinite;
+}
+
+.bgClip:after {
+  color: transparent;
+  content: attr(data-content);
+  display: block;
+  text-shadow: -1px -1px 1px rgba(255,255,255,0.25), 1px 1px 1px #63c8ba, 2px 2px 2px rgba(0,0,0,1), 6px 4px 8px rgba(0,0,0,0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  speak: none;
+  z-index: -1;
+}
+@keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+@-webkit-keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+@-ms-keyframes BackgroundAnimated {    
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+@-moz-keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+
+.bar
+{
+
+}
+.bar:hover{
+fill:black;
+ }
+
+.axis text {
+  font: 22px sans-serif;
+}
+
+text {
+  font: 22px sans-serif;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+label {
+  font: 22px sans-serif;
+}
+
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  stroke-width:1.5px;
+  shape-rendering: crispEdges;
+}
+
+.axis--x path {
+  display: none;
+}
+
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 14px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.ccc
+{
+  border:double 7px #e0e0e0;
+  border-radius:50px;
+  padding:5%;
+  text-align:left;
+  margin-top:2.6%;
+  margin-left:10%;
+  margin-right:10%;
+  padding-top: 3.7%;
+}
+
+#container {
+  text-align:center;
+  margin-top:40px;
+  padding-left:0px;
+  width:100%; 
+}
+        
+@media only screen and (min-width: 200px) {
+  h1{
+    font-size: 71%;
+    line-height:14px;
+  }
+h3
+  {
+    font-size:37.5%;
+    line-height:34%;
+  }
+
+#table-2 td, #table-2 th {
+font-size: 17%;
+height:8.5px;
+}
+li{
+  font-size:25.5%;
+  line-height:25.5%;
+  padding-left:2px;
+ }
+ 
+ li li{
+  font-size:25.5%;
+  line-height:25.5%;
+  padding-left:2px;
+ }
+  .ccc
+ {
+ border-radius:8.5px;
+ }
+ select
+{
+	font-size: 20.4%;
+    font-family: 'Palanquin', sans-serif;
+	height:6.8px;
+	width:37%;
+}
+}
+
+
+
+@media only screen and (min-width: 300px) {
+  h1{
+    font-size: 110%;
+    line-height:21px;
+  }
+h3
+  {
+    font-size:57%;
+    line-height:52%;
+  }
+  .myButton {
+  border-radius: 9px;
+  font-size:42%;
+  font-weight:bold;
+  width: 130px;
+  height:18px;
+  top:calc(50% - 5px);
+  padding: 5px;
+}
+ .myButton3 {
+  border-radius: 6.5px;
+  font-size:40%;
+  width: 52px;
+  height:13px;
+  top:calc(50% - 15px);
+  padding:2.6px;
+}
+#table-2 td, #table-2 th {
+font-size: 26%;
+height:13px;
+}
+li{
+  font-size:40%;
+  line-height:40%;
+  padding-left:3px;
+ }
+ 
+ li li{
+  font-size:40%;
+  line-height:40%;
+  padding-left:3px;
+ }
+
+  .ccc
+ {
+ border-radius:13px;
+ }
+ select
+{
+	font-size: 31%;
+    font-family: 'Palanquin', sans-serif;
+	height:10.4px;
+	width:37%;
+}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+  h1{
+    font-size: 278%;
+    line-height:53px;
+  }
+h3{
+    font-size: 145%;
+    line-height:132%;
+  }
+#table-2 td, #table-2 th {
+font-size: 66%;
+height:33px;
+}
+li{
+  font-size:100%;
+  line-height:100%;
+  padding-left:6.6px;
+ }
+ 
+ li li{
+  font-size:100%;
+  line-height:100%;
+  padding-left:6.6px;
+ }
+  .ccc
+ {
+ border-radius:33px;
+ }
+ select
+{
+	font-size: 80%;
+    font-family: 'Palanquin', sans-serif;
+	height:26.4px;
+	width:37%;
+}
+
+}
+
+
+@media only screen and (min-width: 1170px) {
+  h1{
+    font-size: 420%;
+    font-weight: 300;
+    line-height:55px;
+  }
+h3{
+    font-size: 220%;
+    line-height:80%;
+  }
+.table-2
+{
+  margin-left:50px;
+  padding:30px;
+}
+.table-2 td, .table-2 th {
+font-size: 100%;
+height:50px;
+}
+li{
+  font-size:150%;
+  line-height:150%;
+  padding-left:10px;
+ }
+ 
+ li li{
+  font-size:150%;
+  line-height:150%;
+  padding-left:10px;
+ }
+ .ccc
+ {
+ border-radius:50px;
+ }
+ select
+{
+	font-size: 120%;
+    font-family: 'Palanquin', sans-serif;
+	height:40px;
+	width:37%;
+}
+}
+</style>
+</head>
+
+<body style="overflow-x:yes;overflow-y:auto;">
+<input type="hidden" name="test" value="2">
+
+
+<div id="container">
+<h1 style="text-align:center;" class="bgClip">Weekly Nutrition Comparison</h1>
+</div>
+<br>
+<br>
+<div align="center">
+<select class="selectday" onChange="location = this.options[this.selectedIndex].value;">
+<option value="#">Select an Analysis</option>
+<option value="./rp/nutrition_analysis.php">Nutritions of Monday Meal Plan v.s. Daily Nutrition Requirement</option>
+<option value="./rp/tues.php">Nutritions of Tuesday Meal Plan v.s. Daily Nutrition Requirement</option>
+<option value="./rp/wed.php">Nutritions of Wednesday Meal Plan v.s. Daily Nutrition Requirement</option>
+<option value="./rp/thur.php">Nutritions of Thursday Meal Plan v.s. Daily Nutrition Requirement</option>
+<option value="./rp/fri.php">Nutritions of Friday Meal Plan v.s. Daily Nutrition Requirement</option>
+<option value="./rp/satu.php">Nutritions of Saturday Meal Plan v.s. Daily Nutrition Requirement</option>
+<option value="./rp/sun.php">Nutritions of Sunday Meal Plan v.s. Daily Nutrition Requirement</option>
+<option value="./teststack1124.html">Weekly Nutritions Comparison</option>
+</select>
+</div>
+<br>
+<br>
+<div class="ccc">
+<h3>Definiiton</h3>
+<ul >
+    <li>For each graph, let</li>
+	<li style="font-size:100%;list-style-type: none;">
+	    <ul>
+		    <li><b>N<sub>breakfast, selected nutrition</sub></b> = the amount of selected nutrition provided by today's breakfast,</li>
+			<li><b>N<sub>lunch, selected nutrition</sub></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= the amount of selected nutrition provided by today's lunch,</li>
+		    <li><b>N<sub>dinner, selected nutrition</sub></b>&nbsp; &nbsp;&nbsp;= the amount of selected nutrition provided by today's dinner,</li>
+        </ul>
+	</li>
+</ul>
+<ul>
+<li >The length of each <b><font color="#1f77b4">blue bar</font></b> indicates <b>N<sub>breakfast, selected nutrition</sub></b>,</li>
+<li >The length of each <b><font color="#ff7f0e">orange bar</font></b> indicates <b>N<sub>lunch, selected nutrition</sub></b>,</li>
+<li >The length of each <b><font color="#2ca02c">green bar</font></b> indicates <b>N<sub>dinner, selected nutrition</sub></b>.</li>
+</ul>
+<br>
+<h3>Operation</h3>
+<ul>
+<li ><b>Select different nutritions</b> by using the select menu.</li>
+<li ><b>Show the recipe name/amount of nutrition</b> by moving mouse over a bar.</li>
+<li ><b>Show the grouped/stacked bar chart</b> by clicking the radio buttons.</li>
+</ul>
+</div>
+<br>
+<div align="left" style="padding-left:10%">
+<h3>Select A Nutrition</h3>
+<select id="comboA" onchange="get_nutrition(this)">
+<option value="#" selected>Select</option>
+<option value="Vitamin A, IU">Vitamin A</option>
+<option value="Vitamin B-12">Vitamin B-12</option>
+<option value="Vitamin C, total ascorbic acid">Vitamin C</option>
+<option value="Vitamin D">Vitamin D</option>
+<option value="Vitamin E (alpha-tocopherol)">Vitamin E</option>
+<option value="Iron, Fe">Iron</option>
+<option value="Calcium, Ca">Calcium</option>
+<option value="Sodium, Na">Sodium, Na</option>
+<option value="Potassium, K">Potassium, K</option>
+<option value="Fiber, total dietary">Fiber, total dietary</option>
+<option value="Sugars, total">Sugars, total</option>
+<option value="Carbohydrate, by difference">Carbohydrate, by difference</option>
+<option value="Cholesterol">Cholesterol</option>
+<option value="">Fat Calorie</option>
+<option value="Total lipid (fat)">Total lipid (fat)</option>
+<option value="Fatty acids, total saturated">Fatty acids, total saturated</option>
+<option value="Protein">Protein</option>
+<option value="Energy">Energy</option>
+</select>
+
+<form>
+  <label><input type="radio" name="mode" id="mode" value="grouped"> Grouped</label>
+  <label><input type="radio" name="mode" id="mode"  value="stacked" checked> Stacked</label>
+</form>
+</div>
+<br>
+<br>
+
+
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script>
+
+
+var meals = [0, 1, 2];
+
+$.ajaxSetup({async:false}); 
+	
+var json=null;
+
+var id = $('input[description="test"]').val();  
+   $.post('nu_all.php',{id:id},function(d01){  
+   json=d01;
+});
+	
+
+$.ajaxSetup({async:true});
+
+d01=JSON.parse(json)[0][0];
+d02=JSON.parse(json)[0][1];
+d03=JSON.parse(json)[0][2];
+d11=JSON.parse(json)[1][0];
+d12=JSON.parse(json)[1][1];
+d13=JSON.parse(json)[1][2];
+d21=JSON.parse(json)[2][0];
+d22=JSON.parse(json)[2][1];
+d23=JSON.parse(json)[2][2];
+d31=JSON.parse(json)[3][0];
+d32=JSON.parse(json)[3][1];
+d33=JSON.parse(json)[3][2];
+d41=JSON.parse(json)[4][0];
+d42=JSON.parse(json)[4][1];
+d43=JSON.parse(json)[4][2];
+d51=JSON.parse(json)[5][0];
+d52=JSON.parse(json)[5][1];
+d53=JSON.parse(json)[5][2];
+d61=JSON.parse(json)[6][0];
+d62=JSON.parse(json)[6][1];
+d63=JSON.parse(json)[6][2];
+
+var data={};
+data['mon']=[d01,d02,d03];
+data['tue']=[d11,d12,d13];
+data['wed']=[d21,d22,d23];
+data['thu']=[d31,d32,d33];
+data['fri']=[d41,d42,d43];
+data['sat']=[d51,d52,d53];
+data['sun']=[d61,d62,d63];
+
+var margin = {top: 20, right: 100, bottom: 30, left: 100},
+    width = 1300 - margin.left - margin.right,
+    height = 750 - margin.top - margin.bottom;
+	
+var n = 3, // number of layers
+    m = 7, // number of samples per layer
+    stack = d3.layout.stack();
+
+var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .08);
+
+var y = d3.scale.linear()
+    .rangeRound([height, 0]);
+
+var color = d3.scale.category10();
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .tickSize(0)
+    .tickPadding(6)
+	.tickFormat(function(d){if(d==0){return "Monday";} else if(d==1){return "Tuesday";} else if(d==2){return "Wednesday";} else if(d==3){return "Thursday";} else if(d==4){return "Friday";} else if(d==5){return "Saturday";} else if(d==6){return "Sunday";}})
+    .orient("bottom");
+	
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+	
+
+
+function get_nutrition(sel) {
+  var current_description = sel.value;
+
+
+  var monmeal=[];
+  var tuemeal=[];
+  var wedmeal=[];
+  var thumeal=[];
+  var frimeal=[];
+  var satmeal=[];
+  var sunmeal=[];
+  var weekmeal=[];
+  
+  var week_name=[];
+  var mon_recipe_name=[];
+  var tue_recipe_name=[];
+  var wed_recipe_name=[];
+  var thu_recipe_name=[];
+  var fri_recipe_name=[];
+  var sat_recipe_name=[];
+  var sun_recipe_name=[];
+  
+  var unit=null;
+  
+  if(current_description=="Energy")
+  {
+    for( var i=0;i<3;i++)
+	{
+	   JSON.parse(data.mon[i]).map(function(d){if(d.description==current_description  && d.attribute=="ENERC_KCAL"){unit=d.unitName; mon_recipe_name.splice(i, 0, d.recipeID); monmeal.splice(i, 0, d.value);}});
+	   JSON.parse(data.tue[i]).map(function(d){if(d.description==current_description  && d.attribute=="ENERC_KCAL"){tue_recipe_name.splice(i, 0, d.recipeID); tuemeal.splice(i, 0, d.value);}});
+	   JSON.parse(data.wed[i]).map(function(d){if(d.description==current_description  && d.attribute=="ENERC_KCAL"){wed_recipe_name.splice(i, 0, d.recipeID); wedmeal.splice(i, 0, d.value);}});
+	   JSON.parse(data.thu[i]).map(function(d){if(d.description==current_description  && d.attribute=="ENERC_KCAL"){thu_recipe_name.splice(i, 0, d.recipeID); thumeal.splice(i, 0, d.value);}});
+	   JSON.parse(data.fri[i]).map(function(d){if(d.description==current_description  && d.attribute=="ENERC_KCAL"){fri_recipe_name.splice(i, 0, d.recipeID); frimeal.splice(i, 0, d.value);}});
+	   JSON.parse(data.sat[i]).map(function(d){if(d.description==current_description  && d.attribute=="ENERC_KCAL"){sat_recipe_name.splice(i, 0, d.recipeID); satmeal.splice(i, 0, d.value);}});
+	   JSON.parse(data.sun[i]).map(function(d){if(d.description==current_description  && d.attribute=="ENERC_KCAL"){sun_recipe_name.splice(i, 0, d.recipeID); sunmeal.splice(i, 0, d.value);}});
+	}
+  }
+  else
+  {
+    for( var i=0;i<3;i++)
+	{
+	   JSON.parse(data.mon[i]).map(function(d){if(d.description==current_description){unit=d.unitName; mon_recipe_name.splice(i, 0, d.recipeID); monmeal.splice(i, 0, d.value);}});
+	   JSON.parse(data.tue[i]).map(function(d){if(d.description==current_description){tue_recipe_name.splice(i, 0, d.recipeID); tuemeal.splice(i, 0, d.value);}});
+	   JSON.parse(data.wed[i]).map(function(d){if(d.description==current_description){wed_recipe_name.splice(i, 0, d.recipeID); wedmeal.splice(i, 0, d.value);}});
+	   JSON.parse(data.thu[i]).map(function(d){if(d.description==current_description){thu_recipe_name.splice(i, 0, d.recipeID); thumeal.splice(i, 0, d.value);}});
+	   JSON.parse(data.fri[i]).map(function(d){if(d.description==current_description){fri_recipe_name.splice(i, 0, d.recipeID); frimeal.splice(i, 0, d.value);}});
+	   JSON.parse(data.sat[i]).map(function(d){if(d.description==current_description){sat_recipe_name.splice(i, 0, d.recipeID); satmeal.splice(i, 0, d.value);}});
+	   JSON.parse(data.sun[i]).map(function(d){if(d.description==current_description){sun_recipe_name.splice(i, 0, d.recipeID); sunmeal.splice(i, 0, d.value);}});
+	}
+  }
+	
+	weekmeal.push(monmeal);
+	weekmeal.push(tuemeal);
+	weekmeal.push(wedmeal);
+	weekmeal.push(thumeal);
+	weekmeal.push(frimeal);
+	weekmeal.push(satmeal);
+	weekmeal.push(sunmeal);
+	
+	week_name.push(mon_recipe_name);
+	week_name.push(tue_recipe_name);
+	week_name.push(wed_recipe_name);
+	week_name.push(thu_recipe_name);
+	week_name.push(fri_recipe_name);
+	week_name.push(sat_recipe_name);
+	week_name.push(sun_recipe_name);
+	
+	var target2="-|_|1|2|3|4|5|6|7|8|9|0"; var myRegExp2=new RegExp(target2, 'g'); var replaceText2=" ";
+    var target3="   "; var myRegExp3=new RegExp(target3, 'g'); var replaceText3="";
+	
+   var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d,i,j) {
+		return week_name[i][j].replace(myRegExp2, replaceText2).replace(myRegExp3, replaceText3)+": "+weekmeal[i][j] + " (" + unit+")";
+  })
+
+svg.call(tip);
+
+var layers = d3.layout.stack()(meals.map(function(c) {
+    return weekmeal.map(function(d,i) {
+      return {x: i, y: d[c]};
+    });
+  }));
+  
+var yStackMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });
+	
+  x.domain(layers[0].map(function(d) { return d.x; }));
+  y.domain([0, d3.max(layers[layers.length - 1], function(d) { return d.y0 + d.y; })]);	
+	
+  svg.selectAll(".layer").remove();
+  svg.select("#xaxis").remove();
+  svg.select("#yaxis").remove();
+  svg.selectAll(".legend").remove();
+
+var layer = svg.selectAll(".layer")
+    .data(layers)
+  .enter().append("g")
+    .attr("class", "layer")
+    .style("fill", function(d, i) { return color(i); });
+
+var rect = layer.selectAll("rect")
+    .data(function(d) { return d; })
+  .enter().append("rect")
+    .attr("x", function(d) { return x(d.x); })
+    .attr("y", height)
+    .attr("width", x.rangeBand())
+    .attr("height", 0)
+	.attr("class","bar")
+	.on('mouseover', tip.show)
+    .on('mouseout', tip.hide);
+
+rect.transition()
+    .delay(function(d, i) { return i * 10; })
+    .attr("y", function(d) { if(isNaN(d.y)){d.y=0;} if(isNaN(d.y0)){d.y0=0;} return y(d.y + d.y0); })
+    .attr("height", function(d) { return y(d.y0) - y(d.y0 + d.y); });
+
+svg.append("g")
+    .attr("class", "x axis")
+	.attr("id", "xaxis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(xAxis);
+	
+  svg.append("g")
+      .attr("class", "axis axis--y")
+	  .attr("id", "yaxis")
+      .call(yAxis)
+	  .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text(function(d){if(current_description=="") {return "Amount of Fat calorie (calorie)";}else {return "Amount of "+current_description+" ("+unit+")";}});
+	
+legenddata=["Breakfast", "Lunch", "Dinner"];
+							 
+var legend = svg.selectAll(".legend")
+                  .data(legenddata)
+    			  .enter().append("g")
+      			  .attr("class", "legend")
+      			  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+
+  	legend.append('rect')
+      		.attr("x", width-30)
+      		.attr("width", 18)
+      		.attr("height", 18)
+      		.style("fill", function(d,i){
+  			if(i==0) return "#1f77b4";
+			else if(i==1) return "#ff7f0e";
+			else if(i==2) return "#2ca02c";
+			});
+  
+  	legend.append("text")
+      		.attr("x", width - 40)
+      		.attr("y", 10)
+      		.attr("dy", ".35em")
+      		.style("text-anchor", "end")
+      		.text(function(d){return d;});
+	
+
+d3.selectAll("input").on("change", change);
+
+var timeout = setTimeout(function() {
+  d3.select("input[value=\"grouped\"]").property("checked", true).each(change);
+}, 2000);
+
+function change() {
+  clearTimeout(timeout);
+  if (this.value === "grouped") transitionGrouped();
+  else transitionStacked();
+}
+
+function transitionGrouped() {
+  y.domain([0, yStackMax]);
+
+  rect.transition()
+      .duration(500)
+      .delay(function(d, i) { return i * 10; })
+      .attr("x", function(d, i, j) { return x(d.x) + x.rangeBand() / n * j; })
+      .attr("width", x.rangeBand() / n)
+    .transition()
+      .attr("y", function(d) { return y(d.y); })
+      .attr("height", function(d) { return height - y(d.y); });
+}
+
+function transitionStacked() {
+  y.domain([0, yStackMax]);
+
+  rect.transition()
+      .duration(500)
+      .delay(function(d, i) { return i * 10; })
+      .attr("y", function(d) { return y(d.y0 + d.y); })
+      .attr("height", function(d) { return y(d.y0) - y(d.y0 + d.y); })
+    .transition()
+      .attr("x", function(d) { return x(d.x); })
+      .attr("width", x.rangeBand());
+}
+
+}
+
+</script>
+</body>

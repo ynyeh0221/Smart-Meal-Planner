@@ -1,0 +1,332 @@
+
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+/* General */
+
+
+#mod{
+  margin-left:40px;
+  margin-right:60px;
+  padding-left:15px;
+  padding-top: 15px;
+  width:380px;
+  height:280px;
+  border-radius:25px;
+  text-align:center;
+ }
+ 
+
+
+.container {
+  width: 100%;
+}
+
+.container2 {
+  width: 95%;
+}
+
+
+/* Header */
+
+.header {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #ddd;
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  
+  font-size: 17px;
+  padding: 15px;
+}
+
+
+/* Menu */ 
+
+.header .menu {
+  float: right;
+  list-style: none;
+  margin-top: 5px;
+}
+
+.menu > li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu a {
+  color: #898989;
+}
+
+/* Dropdown */
+
+.dropdown-menu {
+  font-size: 16px;
+  margin-top: 5px;
+  min-width: 105px;
+}
+
+.dropdown-menu li a {
+  color: #898989;
+  padding: 6px 20px;
+  font-weight: 300;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #3d3536;
+  background-color: white;
+}
+
+body, html {
+  /* important */
+  height: 100%;
+}
+
+a {
+  color: #b4d7a8;
+  text-decoration: none;
+}
+
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  padding-left:10%;
+  padding-right:10%;
+  margin: 0 auto;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+@media only screen and (min-width: 768px) {
+  .cd-header {
+    height: 70px;
+  }
+  .cd-header #cd-logo {
+    margin: 23px 0 0 5%;
+  }
+}
+
+.cd-main-content {
+  /* you need to assign a min-height to the main content so that the children can inherit it*/
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.cd-fixed-bg {
+  position: relative;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  font-family: 'Racing Sans One', cursive;
+  font-weight: normal;  
+  color: #F8F8F8;
+  text-shadow: -1px -1px 0 #fff,1px 1px 0 #333,1px 1px 0 #444;
+}
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("23.jpg");
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("24.jpg");
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("122.jpg");
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("8.jpg");
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+.cd-scrolling-bg {
+  position: relative;
+  min-height: 100%;
+  padding: 4em 0;
+  line-height: 1.6;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.cd-scrolling-bg.cd-color-1 {
+  background-color: #3d3536;
+  color: #a6989a;
+}
+.cd-scrolling-bg.cd-color-2 {
+  background-color: #99a478;
+  color: #3d3536;
+}
+.cd-scrolling-bg.cd-color-3 {
+  background-color: #b4d7a8;
+  color: #a6989a;
+}
+
+p{
+  font-family: 'Palanquin', sans-serif;
+ }
+ li{
+  font-family: 'Palanquin', sans-serif;
+ }
+h3{
+  font-family: 'Palanquin', sans-serif;
+ }
+ 
+  @media only screen and (min-width: 200px) {
+  p
+  {
+   font-size:4px;
+  }
+  li
+  {
+   font-size:4px;
+  }
+  h3
+  {
+    font-size:6.5px;
+  }
+    .cd-fixed-bg {
+    background-attachment: fixed;
+  }
+   .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    line-height:8.5%;
+    font-size: 850%;
+    font-weight: 300;
+    margin-top: 1.7px;
+  }
+}
+ 
+ 
+ @media only screen and (min-width: 300px) {
+  p
+  {
+   font-size:5.5px;
+  }
+  li
+  {
+   font-size:5.5px;
+  }
+  h3
+  {
+    font-size:8.5px;
+  }
+    .cd-fixed-bg {
+    background-attachment: fixed;
+  }
+   .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    line-height:13%;
+    font-size: 110%;
+    font-weight: 300;
+    margin-top: 2.6px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  p
+  {
+   font-size:13px;
+  }
+  li
+  {
+   font-size:13px;
+  }
+  h3
+  {
+    font-size:21.5px;
+  }
+  .cd-fixed-bg {
+    background-attachment: fixed;
+  }
+   .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    line-height:33%;
+    font-size: 278%;
+    font-weight: 300;
+    margin-top: 6.5px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  p
+  {
+   font-size:20px;
+  }
+  li
+  {
+   font-size:20px;
+  }
+  h3
+  {
+    font-size:32px;
+  }
+    .cd-fixed-bg {
+    background-attachment: fixed;
+  }
+  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    line-height:50%;
+    font-size: 420%;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+}
+

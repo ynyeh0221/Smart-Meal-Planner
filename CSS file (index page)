@@ -1,0 +1,520 @@
+/* General */
+body{
+  font-size:medium;
+ }
+
+#mod{
+  border-radius:10px;
+  text-align:center;
+  border: 0px dashed #E0E0E0;
+  padding: 15px; 
+  width: 350px;
+  height: 350px;
+  background-color: rgba(255,255,255,0.95);
+ }
+ 
+
+.container {
+  width: 100%;
+}
+
+.container2 {
+  width: 95%;
+}
+
+
+/* Header */
+ 
+
+.header {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #ddd;
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  
+  font-size: 100%;
+  padding: 15px;
+}
+
+
+/* Menu */ 
+
+.header .menu {
+  float: right;
+  list-style: none;
+  margin-top: 5px;
+}
+
+.menu > li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu a {
+  color: #898989;
+}
+
+/* Dropdown */
+
+.dropdown-menu {
+  font-size: 1rem;
+  margin-top: 5px;
+  min-width: 105px;
+}
+
+.dropdown-menu li a {
+  color: #898989;
+  padding: 6px 20px;
+  font-weight: 300;
+}
+
+a{
+    outline: none; /* for Firefox */
+    hlbr:expression(this.onFocus=this.blur()); /* for IE */
+}
+
+
+
+/* Carousel */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 470px;
+  border-bottom: 1px solid #ddd;
+}
+
+.slide {
+  background: transparent url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/feature-gradient-transparent.png') center center no-repeat;
+  background-size: cover;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.active-slide {
+    display: block;
+}
+
+.slide-copy {
+  text-align: center;
+  background-image: url('f1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 470px;
+}
+
+/* Slide feature */
+
+.slide-feature {
+  text-align: center;
+  background-image: url('f13.jpg');
+  height: 470px;
+}
+
+.slide-feature2 {
+  text-align: center;
+  background-image: url('87.jpg');
+  height: 470px;
+}
+
+.slide-feature3 {
+  text-align: center;
+  background-image: url('86.jpg');
+  height: 470px;
+}
+
+fieldset ol {
+    list-style: none;
+    padding-top: 3px;
+    padding-left: 2em;
+    padding-bottom: 3px;
+}
+fieldset li {
+    line-height: 24px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+fieldset li input.fildform{
+    line-height: 24px;
+    height: 24px;
+    border: 1px solid #CCC;
+}
+fieldset .submit {
+    border-style: none;
+}
+
+
+.title{
+  display: block;
+  color: #F8F8F8;
+  text-shadow: -1px -1px 0 #fff,1px 1px 0 #333,1px 1px 0 #444;
+  margin-top: 100px;
+  font-family: 'Racing Sans One', cursive;
+  font-weight: normal;
+  font-size: 420%;
+}
+
+.subtitle{
+  display: block;
+  font-family: 'Racing Sans One', cursive;
+  color: #F8F8F8;
+  text-shadow: -1px -1px 0 #fff,1px 1px 0 #333,1px 1px 0 #444;
+  font-weight: normal;  
+  font-size: 220%;
+}
+
+.title2{
+  display: block;
+  color: #202020;
+   
+  margin-top: 100px;
+  font-family: 'Racing Sans One', cursive;
+  font-weight: normal; 
+  font-size: 4.4em;
+}
+
+.subtitle2{
+  display: block;
+  color: #202020;
+  
+  font-family: 'Oswald', cursive;
+  font-weight: 400;  
+  font-size: 3em;
+}
+
+.title3{
+  display: block;
+  color: #202020;
+   
+  margin-top: 100px;
+  font-family: 'Oswald', cursive;
+  font-weight: 400;  
+  font-size: 12px;
+}
+
+
+.classname {
+    margin-top: 30px;
+	background-color:rgba(0,0,0,0.15);
+    border-radius:99em;
+	text-indent:0;
+    text-decoration: none;
+	border:3px solid #ffffff;
+	display:inline-block;
+    font-family: 'Racing Sans One', cursive;
+	color: #F8F8F8;
+	font-size:175%;
+	font-weight: normal;
+	font-style:normal;
+	height:145px;
+	line-height:145px;
+	width:145px;
+	text-align:center;
+    transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+    overflow:hidden;
+}.classname:hover {
+    color: #202020;
+    background-color: white;
+    border:double 5.5px #202020;
+    text-shadow: 0px 0px 0 #fff,0px 0px 0 #333,0px 0px 0 #444;
+    box-shadow: 0px 0px 0 #fff,0px 0px 0 #333,0px 0px 0 #444;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}.classname:active {
+	position:relative;
+	top:1px;
+    color: #202020;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+.classname:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.arrow-prev {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.slider-dots li.active-dot {
+  color: #363636;
+}
+
+@media only screen and (min-width: 200px) {
+  .title{
+    margin-top: 35px;
+    font-size: 150%;
+  }
+  .subtitle
+  {
+    font-size:70%;
+  }
+  .header
+  {
+    font-size:28%;
+    padding: 5px;
+  }
+  .header .menu {
+  margin-top: 2px;
+}
+
+.menu > li {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+   img
+  {
+    width:8%;
+  }
+  .classname
+  {
+    font-size:60%;
+    height:50px;
+	line-height:50px;
+	width:50px;
+  }
+    .slider {
+  width: 100%;
+  height: 175px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-copy {
+  height: 175px;
+}
+.modal
+{
+    height:65px;
+    width:65px;
+    overflow:hidden;
+}
+.modal iframe
+{
+    width:58px;
+    height:58px;
+}
+}
+
+@media only screen and (min-width: 300px) {
+  .title{
+    margin-top: 50px;
+    font-size: 210%;
+  }
+  .subtitle
+  {
+    font-size:105%;
+  }
+  .header
+  {
+    font-size:40%;
+    padding: 7px;
+  }
+  .header .menu {
+  margin-top: 3px;
+}
+
+.menu > li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+   img
+  {
+    width:12%;
+  }
+  .classname
+  {
+    font-size:85%;
+    height:70px;
+	line-height:70px;
+	width:70px;
+  }
+  .slider {
+  width: 100%;
+  height: 250px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-copy {
+  height: 250px;
+}
+.modal
+{
+    height:100px;
+    width:100px;
+    overflow:hidden;
+}
+.modal iframe
+{
+    width:88.5px;
+    height:115px;
+    margin-left:-280px;
+    margin-top:-30px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+  .title{
+    margin-top: 70px;
+    font-size: 278%;
+  }
+  .subtitle{
+    font-size: 145%;
+  }
+  .header
+  {
+    font-size:66%;
+    padding: 10px;
+  }
+   .header .menu {
+  margin-top: 3.5px;
+}
+
+.menu > li {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+  img
+  {
+    width:17%;
+  }
+  .classname
+  {
+    font-size:116%;
+    height:96px;
+	line-height:96px;
+	width:96px;
+  }
+    .slider {
+  width: 100%;
+  height: 310px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-copy {
+  height: 310px;
+}
+.modal
+{
+    height:251px;
+    width:251px;
+    overflow:hidden;
+}
+.modal iframe
+{
+    width:224px;
+    height:224px;
+    margin-left:-125px;
+    margin-top:0px;
+}
+}
+
+@media only screen and (min-width: 1170px) {
+  .title{
+    margin-top: 100px;
+    font-size: 420%;
+    font-weight: 300;
+  }
+  .subtitle{
+    font-size: 220%;
+  }
+  .header
+  {
+    font-size:100%;
+    padding: 15px;
+  }
+  .header .menu {
+  margin-top: 5px;
+}
+
+.menu > li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+  img
+  {
+    width:25%;
+  }
+  .classname
+  {
+    font-size:175%;
+    height:145px;
+	line-height:145px;
+	width:145px;
+  }
+  .slider {
+  width: 100%;
+  height: 470px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-copy {
+  height: 470px;
+}
+.modal
+{
+    height:380px;
+    width:380px;
+    overflow:hidden;
+}
+.modal iframe
+{
+    width:340px;
+    height:340px;
+    margin-left:0px;
+    margin-top:0px;
+}
+}

@@ -99,11 +99,11 @@ if(isset($obj3[0])!=NULL)
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
     <link href="bootstrap.css" rel="stylesheet">
     <link href="style4.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Palanquin:700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="icon.ico">
-	<link href="recipes.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Palanquin:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="icon.ico">
+    <link href="recipes.css" rel="stylesheet">
     <title>Monday</title>
 	<script>
     body{

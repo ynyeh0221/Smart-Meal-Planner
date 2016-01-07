@@ -6,4 +6,6 @@ This project got 100/100 of final grade.
 
 83% users will use our app, and think that our recommendation functions are better than that provided by Yummly.
 
+The demo of Smart Meal Planner: https://goo.gl/jXlyjd
+
 (to be continued)

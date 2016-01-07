@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+
+<head>
+
+    <!--This page is designed and built by Yi-Nung Yeh-->
+	
+    <meta charset="utf-8">
+	<link href="bootstrap.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Palanquin:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Sigmar+One%7CFredericka+the+Great%7CCabin+Sketch%7CDenk+One%7CRacing+Sans+One%7CCarter+One%7CLemon%7CKnewave' rel='stylesheet' type='text/css'>
+	<title>similarity graph</title>
+<style>
+body{
+  font-size:medium;
+ }
+
+
+.node-active{
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.node-inactive{
+  stroke: #555;
+  stroke-width: 0px;
+}
+
+.ccc
+{
+  border:double 7px #e0e0e0;
+  padding:5%;
+  text-align:left;
+  margin-top:2.6%;
+  margin-left:10%;
+  margin-right:10%;
+  padding-top: 3.7%;
+}
+
+h3{
+  display: block;
+  color: black;   
+  font-family: 'Racing Sans One', cursive;
+  font-weight: normal; 
+  }
+ 
+.link {
+  stroke: #606060;
+}
+
+.node text {
+  pointer-events: none;
+  font: 22px sans-serif;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+text {
+  font: 14px sans-serif;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+.text2 {
+  font: 16px sans-serif;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+@media only screen and (min-width: 200px) {
+  h1{
+    font-size: 71%;
+    line-height:14px;
+  }
+h3
+  {
+    font-size:37.5%;
+    line-height:34%;
+  }
+
+#table-2 td, #table-2 th {
+font-size: 17%;
+height:8.5px;
+}
+li{
+  font-size:25.5%;
+  line-height:25.5%;
+  padding-left:2px;
+ }
+ 
+ li li{
+  font-size:25.5%;
+  line-height:25.5%;
+  padding-left:2px;
+ }
+  .ccc
+ {
+ border-radius:8.5px;
+ }
+ select
+{
+	font-size: 20.4%;
+    font-family: 'Palanquin', sans-serif;
+	height:6.8px;
+	width:37%;
+}
+.bu{
+  height:6px;
+  width:25.5px;
+  font-size:3.5px;
+  border-radius:3.5px;
+ }
+}
+
+
+
+@media only screen and (min-width: 300px) {
+  h1{
+    font-size: 110%;
+    line-height:21px;
+  }
+h3
+  {
+    font-size:57%;
+    line-height:52%;
+  }
+  .myButton {
+  border-radius: 9px;
+  font-size:42%;
+  font-weight:bold;
+  width: 130px;
+  height:18px;
+  top:calc(50% - 5px);
+  padding: 5px;
+}
+ .myButton3 {
+  border-radius: 6.5px;
+  font-size:40%;
+  width: 52px;
+  height:13px;
+  top:calc(50% - 15px);
+  padding:2.6px;
+}
+#table-2 td, #table-2 th {
+font-size: 26%;
+height:13px;
+}
+li{
+  font-size:40%;
+  line-height:40%;
+  padding-left:3px;
+ }
+ 
+ li li{
+  font-size:40%;
+  line-height:40%;
+  padding-left:3px;
+ }
+
+  .ccc
+ {
+ border-radius:13px;
+ }
+ select
+{
+	font-size: 31%;
+    font-family: 'Palanquin', sans-serif;
+	height:10.4px;
+	width:37%;
+}
+.bu{
+  height:9px;
+  width:40px;
+  font-size:5.2px;
+  border-radius:5.2px;
+ }
+}
+
+
+@media only screen and (min-width: 768px) {
+  h1{
+    font-size: 278%;
+    line-height:53px;
+  }
+h3{
+    font-size: 145%;
+    line-height:132%;
+  }
+#table-2 td, #table-2 th {
+font-size: 66%;
+height:33px;
+}
+li{
+  font-size:100%;
+  line-height:100%;
+  padding-left:6.6px;
+ }
+ 
+ li li{
+  font-size:100%;
+  line-height:100%;
+  padding-left:6.6px;
+ }
+  .ccc
+ {
+ border-radius:33px;
+ }
+ select
+{
+	font-size: 80%;
+    font-family: 'Palanquin', sans-serif;
+	height:26.4px;
+	width:37%;
+}
+.bu{
+  height:23px;
+  width:100px;
+  font-size:13px;
+  border-radius:13px;
+ }
+}
+
+
+@media only screen and (min-width: 1170px) {
+  h1{
+    font-size: 420%;
+    font-weight: 300;
+    line-height:55px;
+  }
+h3{
+    font-size: 220%;
+    line-height:80%;
+  }
+.table-2
+{
+  margin-left:50px;
+  padding:30px;
+}
+.table-2 td, .table-2 th {
+font-size: 100%;
+height:50px;
+}
+li{
+  font-size:150%;
+  line-height:150%;
+  padding-left:10px;
+ }
+ 
+ li li{
+  font-size:150%;
+  line-height:150%;
+  padding-left:10px;
+ }
+ .ccc
+ {
+ border-radius:50px;
+ }
+ select
+{
+	font-size: 120%;
+    font-family: 'Palanquin', sans-serif;
+	height:40px;
+	width:37%;
+}
+.bu{
+  height:35px;
+  width:150px;
+  font-size:20px;
+  border-radius:20px;
+ }
+}
+</style>
+
+<style>
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  stroke-width:2px;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: orange;
+}
+
+.bar2 {
+  fill: red;
+}
+
+.bar:hover {
+  fill: #cc6600;
+}
+
+.bar2:hover {
+  fill: #990000;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.bu{
+  background:none;
+  border:2px solid black;
+ }
+ 
+.bu:hover{
+  background:black;
+  color:white;
+  border:2px solid black;
+ }
+
+.bgClip {
+    background: -webkit-linear-gradient(transparent, transparent), url(133.jpg);
+    background: -o-linear-gradient(transparent, transparent);
+	background-repeat:repeat-x;
+    background-position:0 0;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	color: black;
+  	text-align:center;
+    font-family:'Racing Sans One', cursive;
+	font-weight: normal; 
+	line-height:80px;
+  	margin: 0;
+    -webkit-animation:BackgroundAnimated 15s linear infinite;
+    -moz-animation:BackgroundAnimated 15s linear infinite;
+    -ms-animation:BackgroundAnimated 15s linear infinite;
+    -o-animation:BackgroundAnimated 15s linear infinite;
+    animation:BackgroundAnimated 15s linear infinite;
+}
+
+.bgClip:after {
+  color: transparent;
+  content: attr(data-content);
+  display: block;
+  text-shadow: -1px -1px 1px rgba(255,255,255,0.25), 1px 1px 1px #63c8ba, 2px 2px 2px rgba(0,0,0,1), 6px 4px 8px rgba(0,0,0,0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  speak: none;
+  z-index: -1;
+}
+ 
+@keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+@-webkit-keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+@-ms-keyframes BackgroundAnimated {    
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+@-moz-keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+
+#container {
+  text-align:center;
+  margin-top:40px;
+  padding-left:0px;
+  width:100%; 
+}
+</style>
+</head>
+
+<body style="overflow-x:hidden;overflow-y:auto;">
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
+<div id="container">
+
+<h1 class="bgClip" style="text-align:center;">Changing Recipe by Similarity Graph</h1>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="ccc">
+<h3>Definiiton</h3>
+<ul>
+<li><b><font color="red">Red node:</font></b> the recipe which you want to change.</li>
+<li><b><font color="#004c99">Blue node:</font></b> the most similar recipes to the recipe which you want to change.</li>
+<li><b><font color="yellow">Yellow node:</font></b> the most similar recipes to all <b><font color="#004c99">blue nodes</font></b>.</li>
+<li>The <b>thicker stroke of a link</b> indicates higher similarity between 2 recipes.</li>
+</ul>
+<h3>Operation</h3>
+<ul>
+	<li>For the force graph:</li>
+	<li style="list-style-type: none;font-size:100%">
+	<ul>
+	    <li><b>Room in/out</b> by scrolling the mousewheel.</li>
+		<li><b>Dragging and dropping</b> is allowed.</li>
+		<li><b>Show a node's name</b> by moving mouse over a node.</li>
+		<li><b>Change recipe</b> by clicking a node.</li>
+		<li><b>Show the bar chart of nutrition comparison</b> by clicking a node.</li>
+	</ul>
+	</li>
+	<li>For the bar chart:</li>
+	<li  style="list-style-type: none;font-size:100%">
+	<ul>
+	    <li><b>Select different nutritions</b> by using the select menu on the right hand side.</li>
+		<li><b>Show the amount of nutrition</b> by moving mouse over a bar.</li>
+	</ul>
+	</li>
+</ul>
+<input type="hidden" name="test" value="2"> 
+<input type="hidden" name="abc" id="abc">
+<input type="hidden" name="kk" id="kk">
+<br>
+<h3>Return to Last Page</h3>
+<input class="bu" type ="button" onclick="history.back()" value="Return">
+</div>
+<div style="text-align:right;padding-right:10%">
+<h3>Select A Nutrition</h3>
+<select id="comboA" onchange="get_nutrition(this)">
+<option value="Vitamin A, IU" selected>Vitamin A</option>
+<option value="Vitamin B-12">Vitamin B-12</option>
+<option value="Vitamin C, total ascorbic acid">Vitamin C</option>
+<option value="Vitamin D">Vitamin D</option>
+<option value="Vitamin E (alpha-tocopherol)">Vitamin E</option>
+<option value="Iron, Fe">Iron</option>
+<option value="Calcium, Ca">Calcium</option>
+<option value="Sodium, Na">Sodium, Na</option>
+<option value="Potassium, K">Potassium, K</option>
+<option value="Fiber, total dietary">Fiber, total dietary</option>
+<option value="Sugars, total">Sugars, total</option>
+<option value="Carbohydrate, by difference">Carbohydrate, by difference</option>
+<option value="Cholesterol">Cholesterol</option>
+<option value="">Fat Calorie</option>
+<option value="Total lipid (fat)">Total lipid (fat)</option>
+<option value="Fatty acids, total saturated">Fatty acids, total saturated</option>
+<option value="Protein">Protein</option>
+<option value="Energy">Energy</option>
+</select>
+</div>
+
+
+
+<br>
+
+<script>
+
+var width = 820,
+    height = 1000;
+	
+var ori_json=null;
+var new_json=null;
+
+var selected_node=null;
+var legenddata=null;
+
+
+var filtervalue="Vitamin A, IU";
+
+$.ajaxSetup({async:false}); 
+	
+var main_node=null;
+var rid=null;
+
+var id = $('input[name="test"]').val();  
+   $.post('json.php',{id:id},function(data){  
+   main_node=data;
+});
+
+   $.post('rid.php',{id},function(data){  
+   rid=data.trim();
+});
+	
+$.ajaxSetup({async:true});
+
+
+
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+	.call(d3.behavior.zoom().on("zoom", redraw))
+        .append('g');
+
+
+function redraw() {
+      svg.attr("transform",
+          "translate(" + d3.event.translate + ")"
+          + " scale(" + d3.event.scale + ")");
+    }
+
+var drag = d3.behavior.drag()
+            .origin(function(d) { return d; })
+            .on("dragstart", dragstarted)
+            .on("drag", dragged)
+            .on("dragend", dragended);
+			
+        function dragstarted(d) {
+          d3.event.sourceEvent.stopPropagation();
+          
+          d3.select(this).classed("dragging", true);
+          force.start();
+        }
+
+        function dragged(d) {
+          
+          d3.select(this).attr("cx", d.x = d3.event.x).attr("cy", d.y = d3.event.y);
+          
+        }
+
+        function dragended(d) {
+          
+          d3.select(this).classed("dragging", false);
+        }
+	
+						  
+var margin = {top: 170, right: 30, bottom: 160, left: 80};
+width2 = 470 - margin.left - margin.right,
+height2 = 900 - margin.top - margin.bottom;
+
+var bar_gap=30;
+							
+var x = d3.scale.ordinal().range([3*width2/10-bar_gap/2-50, 7*width2/10-bar_gap/2+50]);
+var y = d3.scale.linear().range([height2, 50]);
+
+var xAxis = d3.svg.axis()
+.scale(x)
+.orient("bottom");
+
+var yAxis = d3.svg.axis()
+.scale(y)
+.orient("left");
+
+
+var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) {
+    if(d.description=="")
+	{
+	    return "Fat calorie: " + d.value + " ("+d.unitName+")"+"</span>";
+	}
+	else
+        return d.description+": " + d.value + " ("+d.unitName+")"+"</span>";
+  })
+
+var svg2 = d3.select("body").append("svg")
+    .attr("width", width2 + margin.left + margin.right)
+    .attr("height", height2 + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(100,0)");
+
+
+svg2.call(tip);
+
+	
+
+
+var force = d3.layout.force()
+    .gravity(.05)
+    .distance(300)
+    .charge(-60)
+    .size([width, height]);
+	
+
+  json = JSON.parse( main_node );
+
+  force
+      .nodes(json.nodes)
+      .links(json.edges)
+      .start();
+	  
+
+
+  
+    var adjust=[];
+	var adjust2=[];
+	
+  var link = svg.selectAll(".link")
+      .data(json.edges)
+    .enter().append("line")
+      .attr("class", "link")
+	  .style("stroke", function(d) { if(d.source.name===rid){adjust.push(d.target.name); return "#202020";} else if(d.target.name===rid){adjust.push(d.source.name); return "#202020";} else {return "#202020";} })
+	  .style("stroke-width", function(d) { if(d.source.name===rid){return 10*d.value;} else if(d.target.name===rid){return 10*d.value;} else if(adjust.indexOf(d.target.name)>-1){ adjust2.push(d.source.name); return 5*d.value;} else if(adjust.indexOf(d.source.name)>-1){ adjust2.push(d.target.name); return 1*d.value;} else {return 0;} });
+	  
+  var node = svg.selectAll(".node")
+      .data(json.nodes)
+    .enter().append("circle")
+      .attr("class", "node")
+      .attr("r", function(d){if(d.name==rid){return 60+d.score;} else if(adjust.indexOf(d.name)>-1){return 30+d.score;} else if(adjust2.indexOf(d.name)>-1){return 15+d.score;} else{return 0;}})
+	  .style("fill", function(d){if(d.name==rid){return "red";} else if(adjust.indexOf(d.name)>-1){return "#004c99";} else if(adjust2.indexOf(d.name)>-1){return "yellow";} else {return "black";}})
+      .call(force.drag)
+	  .on('mouseover', function(d){
+	      d3.select(this)
+		    .style("fill", function(d){if(d.name==rid){return "#ff3333";} else if(adjust.indexOf(d.name)>-1){return "#3399ff";} else if(adjust2.indexOf(d.name)>-1){return "#ff8000";} else {return "black";}})
+			.attr("class", "node-active")
+		    .attr("r", function(d){if(d.name==rid){return 65+d.score;} else if(adjust.indexOf(d.name)>-1){return 35+d.score;} else if(adjust2.indexOf(d.name)>-1){return 20+d.score;} else{return 0;}})
+       })
+      .on('mouseout', function(d){	
+          d3.select(this)
+		    .style("fill", function(d){if(d.name==rid){return "red";} else if(adjust.indexOf(d.name)>-1){return "#004c99";} else if(adjust2.indexOf(d.name)>-1){return "yellow";} else {return "black";}})
+			.attr("class", "node-inactive")
+		    .attr("r", function(d){if(d.name==rid){return 60+d.score;} else if(adjust.indexOf(d.name)>-1){return 30+d.score;} else if(adjust2.indexOf(d.name)>-1){return 15+d.score;} else{return 0;}});
+	   })
+	   .call(drag);
+
+  	  
+  
+  var text = svg.append("g").selectAll("text")
+    .data(json.nodes)
+  .enter().append("text")
+    .attr("class","text2")
+    .attr("x", 12)
+    .attr("y", ".31em")
+    .text(function(d) { var target="-|_|1|2|3|4|5|6|7|8|9|0"; var myRegExp=new RegExp(target, 'g'); var replaceText=" "; if(d.name==rid){return d.name.replace(myRegExp, replaceText);} else if(adjust.indexOf(d.name)>-1){return d.name.replace(myRegExp, replaceText);} else if(adjust2.indexOf(d.name)>-1){return d.name.replace(myRegExp, replaceText);}})
+	.style("fill", function(d){if(d.name==rid){return "red";}else if(adjust.indexOf(d.name)>-1){return "#004c99";} else if(adjust2.indexOf(d.name)>-1){return "black";}});
+  
+  
+  node.append("title")
+      .text(function(d) { var target2="-|_|1|2|3|4|5|6|7|8|9|0"; var myRegExp=new RegExp(target2, 'g'); var replaceText=" "; if(d.name==rid){return d.name.replace(myRegExp, replaceText);} else if(adjust.indexOf(d.name)>-1){return d.name.replace(myRegExp, replaceText);} else if(adjust2.indexOf(d.name)>-1){return d.name.replace(myRegExp, replaceText);}})
+
+	
+	node.on("click", function(d)
+                      {
+                          	if(d.name!=rid)
+							{
+							
+							selected_node=d.name;
+							
+							var a = document.getElementById("abc");
+							var nutrition_new = null;
+							var nutrition_ori = null;
+	  						a.value = d.name;
+	  						$.ajaxSetup({async:false}); 
+	  						var id2 = $('input[name="abc"]').val();  
+	  						$.post('nu_new.php',{id2:id2},function(data){  
+	  						    nutrition_new=data;
+  	  						});
+      						a.value = rid;
+	  						id2 = $('input[name="abc"]').val(); 
+	  						$.post('nu_new.php',{id2},function(data){  
+	  						    nutrition_ori=data;
+	  						});
+	  						$.ajaxSetup({async:true});
+	  						new_json = JSON.parse( nutrition_new );
+	  						ori_json = JSON.parse( nutrition_ori );
+							
+							
+							var target2="-|_|1|2|3|4|5|6|7|8|9|0"; var myRegExp2=new RegExp(target2, 'g'); var replaceText2=" ";
+							var target3="   "; var myRegExp3=new RegExp(target3, 'g'); var replaceText3="";
+							
+							var xname=[d.name.replace(myRegExp2, replaceText2).replace(myRegExp3, replaceText3),rid.replace(myRegExp2, replaceText2).replace(myRegExp3, replaceText3)];
+
+	  						x.domain(xname.map(function(d) { return d; }));
+      						y.domain([0, Math.max(d3.max(new_json, function(d) { if(d.description=="Energy"){if(d.description==filtervalue && d.attribute=="ENERC_KCAL"){return d.value;}} else {if(d.description==filtervalue){return d.value;} }}), d3.max(ori_json, function(d) { if(d.description=="Energy"){if(d.description==filtervalue && d.attribute=="ENERC_KCAL"){return d.value;}} else {if(d.description==filtervalue){return d.value;}} }))*1.2]);
+							
+                            svg2.select("#xaxis").remove();
+							svg2.select("#yaxis").remove();
+  
+  							svg2.append("g")
+      						.attr("class", "x axis")
+							.attr("id", "xaxis")
+      						.attr("transform", "translate(0," + height2 + ")")
+      						.call(xAxis)
+							
+							
+
+ 							 svg2.append("g")
+      						 .attr("class", "y axis")
+							 .attr("id", "yaxis")
+      						 .call(yAxis)
+    						 .append("text")
+      						 .attr("transform", "rotate(-90)")
+      						 .attr("y", 6)
+      						 .attr("dy", ".71em")
+      						 .style("text-anchor", "end")
+      						 .text(function(d){if(filtervalue=="") {return "Amount of Fat calorie";}else {return "Amount of "+filtervalue;}});
+							 
+							 
+
+
+							 svg2.selectAll(".bar").remove();
+
+							 svg2.selectAll(".bar2").remove();
+							 
+							 svg2.selectAll(".legend").remove();
+
+  							 svg2.selectAll(".bar")
+      						 .data(new_json)
+    						 .enter().append("rect")
+							 .filter(function(d){if(d.description=="Energy"){if(d.description==filtervalue && d.attribute=="ENERC_KCAL"){return d;}} else {if(d.description==filtervalue){return d;}}})
+      						 .attr("class", "bar")
+      						 .attr("x", function(d) { return 1*width2/5-50; })
+      						 .attr("width", width2/5-bar_gap)
+      						 .attr("y", function(d) { return y(d.value); })
+      						 .attr("height", function(d) { return height2 - y(d.value); })
+      						 .on('mouseover', tip.show)
+      						 .on('mouseout', tip.hide);
+							 
+							 svg2.selectAll(".bar2")
+      						 .data(ori_json)
+    						 .enter().append("rect")
+							 .filter(function(d){if(d.description=="Energy"){if(d.description==filtervalue && d.attribute=="ENERC_KCAL"){return d;}} else {if(d.description==filtervalue){return d;}}})
+      						 .attr("class", "bar2")
+      						 .attr("x", function(d) { return 3*width2/5+50; })
+      						 .attr("width", width2/5-bar_gap)
+      						 .attr("y", function(d) { return y(d.value); })
+      						 .attr("height", function(d) { return height2 - y(d.value); })
+      						 .on('mouseover', tip.show)
+      						 .on('mouseout', tip.hide);
+							 
+							 legenddata=[d.name, rid];
+							 
+							 var legend2 = svg2.selectAll(".legend")
+      						 .data(legenddata)
+    						 .enter().append("g")
+      						 .attr("class", "legend")
+      						 .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+
+  							 legend2.append('rect')
+      						 .attr("x", width2-100)
+      						 .attr("width", 18)
+      						 .attr("height", 18)
+      						 .style("fill", function(d,i){
+  							 if(i==0) return "orange";
+							 else if(i==1) return "red";
+							 });
+  
+  							 legend2.append("text")
+      						 .attr("x", width2 - 110)
+      						 .attr("y", 10)
+      						 .attr("dy", ".35em")
+      						 .style("text-anchor", "end")
+      						 .text(function(d){return d.replace(myRegExp2, replaceText2).replace(myRegExp3, replaceText3);});
+							 
+
+						  if(d.name!=rid)
+						  {
+						      if(confirm("Replace "+rid.replace(myRegExp2, replaceText2).replace(myRegExp3, replaceText3)+" by "+d.name.replace(myRegExp2, replaceText2).replace(myRegExp3, replaceText3)+"?"))
+                          	  {
+								  var b = document.getElementById("kk");
+								  b.value = d.name;
+								  $.ajaxSetup({async:false});
+								  $(function(){
+	  							      id3 = $('input[name="kk"]').val();
+	  							      $.post('change.php',{id3:id3},function(data){
+	  							      });
+								  });
+								  $.ajaxSetup({async:true});
+								  window.history.back();
+							  }
+						  }
+						  
+						  }
+                      })
+
+
+  force.on("tick", function() {
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    node.attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+
+    text.attr("transform", transform);
+  });
+
+  
+
+function transform(d) {
+  return "translate(" + d.x + "," + d.y + ")";
+}
+
+function get_nutrition(sel) {
+  filtervalue = sel.value;
+	  
+  var target2="-|_|1|2|3|4|5|6|7|8|9|0"; var myRegExp2=new RegExp(target2, 'g'); var replaceText2=" ";
+  var target3="   "; var myRegExp3=new RegExp(target3, 'g'); var replaceText3="";
+  var xname=[selected_node.replace(myRegExp2, replaceText2).replace(myRegExp3, replaceText3),rid.replace(myRegExp2, replaceText2).replace(myRegExp3, replaceText3)];
+
+  x.domain(xname.map(function(d) { return d; }));
+  y.domain([0, Math.max(d3.max(new_json, function(d) { if(d.description=="Energy"){if(d.description==filtervalue && d.attribute=="ENERC_KCAL"){return d.value;}} else {if(d.description==filtervalue){return d.value;} }}), d3.max(ori_json, function(d) { if(d.description=="Energy"){if(d.description==filtervalue && d.attribute=="ENERC_KCAL"){return d.value;}} else {if(d.description==filtervalue){return d.value;}} }))*1.2]);
+							
+  svg2.select("#xaxis").remove();
+  svg2.select("#yaxis").remove();
+  svg2.append("g")
+  .attr("class", "x axis")
+  .attr("id", "xaxis")
+  .attr("transform", "translate(0," + height2 + ")")
+  .call(xAxis)
+
+  svg2.append("g")
+  .attr("class", "y axis")
+  .attr("id", "yaxis")
+  .call(yAxis)
+  .append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("y", 6)
+  .attr("dy", ".71em")
+  .style("text-anchor", "end")
+  .text(function(d){if(filtervalue=="") {return "Amount of Fat calorie";}else {return "Amount of "+filtervalue;}});
+
+  svg2.selectAll(".bar").remove();
+  svg2.selectAll(".bar2").remove();
+  svg2.selectAll(".legend").remove();
+
+  svg2.selectAll(".bar")
+  .data(new_json)
+  .enter().append("rect")
+  .filter(function(d){if(d.description=="Energy"){if(d.description==filtervalue && d.attribute=="ENERC_KCAL"){return d;}} else {if(d.description==filtervalue){return d;}}})
+  .attr("class", "bar")
+  .attr("x", function(d) { return 1*width2/5-50; })
+  .attr("width", width2/5-bar_gap)
+  .attr("y", function(d) { return y(d.value); })
+  .attr("height", function(d) { return height2 - y(d.value); })
+  .on('mouseover', tip.show)
+  .on('mouseout', tip.hide);
+							 
+  svg2.selectAll(".bar2")
+  .data(ori_json)
+  .enter().append("rect")
+  .filter(function(d){if(d.description=="Energy"){if(d.description==filtervalue && d.attribute=="ENERC_KCAL"){return d;}} else {if(d.description==filtervalue){return d;}}})
+  .attr("class", "bar2")
+  .attr("x", function(d) { return 3*width2/5+50; })
+  .attr("width", width2/5-bar_gap)
+  .attr("y", function(d) { return y(d.value); })
+  .attr("height", function(d) { return height2 - y(d.value); })
+  .on('mouseover', tip.show)
+  .on('mouseout', tip.hide);
+  
+  
+   legenddata=[selected_node, rid];
+							 
+   var legend2 = svg2.selectAll(".legend")
+   .data(legenddata)
+   .enter().append("g")
+   .attr("class", "legend")
+   .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+
+  	legend2.append('rect')
+    .attr("x", width2-100)
+    .attr("width", 18)
+    .attr("height", 18)
+    .style("fill", function(d,i){
+  	if(i==0) return "orange";
+	else if(i==1) return "red";
+	});
+  
+  	legend2.append("text")
+    .attr("x", width2 - 110)
+    .attr("y", 10)
+    .attr("dy", ".35em")
+    .style("text-anchor", "end")
+    .text(function(d){return d.replace(myRegExp2, replaceText2).replace(myRegExp3, replaceText3);});
+						  
+}
+
+</script>
+

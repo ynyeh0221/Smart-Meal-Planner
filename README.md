@@ -5,3 +5,5 @@ I am responsible for the recommendation system app design, build, and nutrition 
 This project got 100/100 of final grade.
 
 83% users will use our app, and think that our recommendation functions are better than that provided by Yummly.
+
+(to be continued)

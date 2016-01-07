@@ -1,4 +1,4 @@
-This is the final project of Data and Visual Analytics, Gatech. Smart Meal Planner, a personalized recipe recommendation system was designed and built based on more than 30000 recipes downloaded from Yummly API.
+This is the final project of Data and Visual Analytics, Gatech. Smart Meal Planner--a personalized recipe recommendation app was designed and built based on more than 30000 recipes downloaded from Yummly API.
 
 I am responsible for the recommendation system app design, build, and nutrition intake analysis visualization with HTML5/CSS3/JavaSript/JQUERY/AJAX/PHP/D3.js.
 

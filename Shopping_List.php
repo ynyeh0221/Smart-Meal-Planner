@@ -6,9 +6,9 @@
 if($_SESSION['login']==false)
 {
     echo "<script> alert('Please Login. Redirect to index page.'); </script>";
-	session_unset();
+    session_unset();
     session_destroy();
-	echo "<meta http-equiv='Refresh' content='0; URL=./team15_index2.php'>"; 
+    echo "<meta http-equiv='Refresh' content='0; URL=./team15_index2.php'>"; 
 }
 ?>
 
@@ -21,19 +21,19 @@ if($_SESSION['login']==false)
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
     <link href="bootstrap.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Sigmar+One%7CFredericka+the+Great%7CCabin+Sketch%7CDenk+One%7CRacing+Sans+One%7CCarter+One%7CLemon%7CKnewave' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Palanquin:700' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="icon.ico">
-	<link href="recipes.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Sigmar+One%7CFredericka+the+Great%7CCabin+Sketch%7CDenk+One%7CRacing+Sans+One%7CCarter+One%7CLemon%7CKnewave' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Palanquin:700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="icon.ico">
+    <link href="recipes.css" rel="stylesheet">
     <title>Shopping list</title>
     
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 	
-	<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-  <![endif]-->
+    <![endif]-->
 	
   <style>
 
@@ -48,13 +48,10 @@ if($_SESSION['login']==false)
   }
   </style>
   </head>
-  <body style="overflow-y:scroll;overflow-x:hidden;">  
-  
-  
+  <body style="overflow-y:scroll;overflow-x:hidden;">
 
 <div id="d">
-
-
+	
   <h1 class="title2">No more unexpected running out of groceries!</h1>
   <h3 class="subtitle2">A weekly shopping list with the items you'll need!</h3>
   <br>
@@ -75,7 +72,6 @@ if($_SESSION['login']==false)
   <br>
   <br>
   </div>
-
 	
    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    <script src="bootstrap-modal.js"></script>

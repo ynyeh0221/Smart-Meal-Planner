@@ -16,7 +16,7 @@ if($_SESSION['login']==false)
 <!--This page is designed and built by Yi-Nung Yeh-->
   <head>
   <meta charset="utf-8" />
-	<title>get recipes</title>
+  <title>get recipes</title>
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
   <link href="bootstrap.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>

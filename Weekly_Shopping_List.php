@@ -5,9 +5,9 @@
 if($_SESSION['login']==false)
 {
     echo "<script> alert('Please Login. Redirect to index page.'); </script>";
-	session_unset();
+    session_unset();
     session_destroy();
-	echo "<meta http-equiv='Refresh' content='0; URL=../main_frame.php'>"; 
+    echo "<meta http-equiv='Refresh' content='0; URL=../main_frame.php'>"; 
 }
 
 // set the PHP timelimit to 10 minutes
@@ -136,25 +136,17 @@ $obj63 = json_decode($data63);
 
 </style>
 
-  </head>
-  <body>  
-  
-  
-  
-  
-  
+</head>
+<body>
+	
 <div id="c">
-
 <h1 class="title2">Shopping List</h1>
-
 <br>
 <button class="myButton2" onclick="myFunction()">Print this page &nbsp; <span><i class="fa fa-print"></i></span></button>
 <br>
 <br>
 <br>
-
 <table id="table-2" align="center">
-
 <?php
 
 $OrigiArray= array();
@@ -729,18 +721,16 @@ echo "</table>";
 <br>
 
 <div id="space"></div>
-
-
 <script>
-	function myFunction() {
-        window.print();
-	}
+function myFunction() {
+       window.print();
+}
 </script>
-    <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="app2.js"></script>
-	<script src="app3.js"></script>
-	<script> 
-    </script> 
-  </body>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="app2.js"></script>
+<script src="app3.js"></script>
+<script> 
+</script> 
+</body>
 </html>

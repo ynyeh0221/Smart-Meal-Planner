@@ -7,9 +7,9 @@
 if($_SESSION['login']==false)
 {
     echo "<script> alert('Please Login. Redirect to index page.'); </script>";
-	session_unset();
+    session_unset();
     session_destroy();
-	echo "<meta http-equiv='Refresh' content='0; URL=../team15_index2.php'>"; 
+    echo "<meta http-equiv='Refresh' content='0; URL=../team15_index2.php'>"; 
 }
 
 // set the PHP timelimit to 10 minutes
@@ -23,13 +23,13 @@ if($_SESSION['result'] == null && $_SESSION['login']==true)
     $ch=curl_init();
     $timeout=980;
 	
-	curl_setopt($ch, CURLOPT_URL, $url_r);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+    curl_setopt($ch, CURLOPT_URL, $url_r);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
 
     $result=curl_exec($ch);
-	curl_close($ch);
-	$_SESSION['result']=json_decode($result);
+    curl_close($ch);
+    $_SESSION['result']=json_decode($result);
     
 }
 

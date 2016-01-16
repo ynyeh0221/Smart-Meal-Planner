@@ -35,18 +35,18 @@ if($_SESSION['login']==false)
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
   <![endif]-->
 	
-	<style>
+  <style>
 
-	body
-	{
-  		 background-image: url('133.jpg');
-    	 -webkit-background-size: cover;
-     	 -moz-background-size: cover;
-       	 -o-background-size: cover;
-          background-size: cover;
-  		  background-attachment:fixed;
-    }
-	</style>
+  body
+  {
+    background-image: url('133.jpg');
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+    background-size: cover;
+    background-attachment:fixed;
+  }
+  </style>
   </head>
   <body style="overflow-y:scroll;overflow-x:hidden;">  
   

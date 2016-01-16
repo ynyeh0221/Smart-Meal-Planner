@@ -6,25 +6,23 @@
 
 <html>
   <head>
-  	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
     <link href="bootstrap.css" rel="stylesheet">
     <link href="style3.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="icon.ico">
-	<title>Smart Meal Planner</title>
-	<style>
-	iframe{
-  		   margin:0px 0px;
-  		   border:none;
-		 }
-	</style>
-
+    <link href='https://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="icon.ico">
+    <title>Smart Meal Planner</title>
+    <style>
+        iframe{
+  	   margin:0px 0px;
+  	   border:none;
+	 }
+    </style>
   </head>
   <body>
   
-  
-  <!--iframe-->
+<!--iframe-->
 
 <!--JavaScript-->
 <script type="text/javascript">
@@ -74,12 +72,7 @@ else
 var imainframe=document.getElementById("mainframe");
 imainframe.height = viewportheight;
 }
-//??:
-//window.onresize ??????????
-//http://blog.csdn.net/phpandjava/article/details/5860355
-//
-//????iframe??
-//http://blog.xuite.net/xiaolian/blog/65171379-%E8%87%AA%E5%8B%95%E8%AA%BF%E6%95%B4iframe%E9%AB%98%E5%BA%A6
+
 </script>
 
     <div class="header">
@@ -88,9 +81,9 @@ imainframe.height = viewportheight;
           <img src="logo.png" alt="logo">
         </a>
 						  
-		<ul class="menu">
-		  <li><a data-toggle="modal" href="#example"><?php if($_SESSION['login']==TRUE){echo "Log Out";} else {echo "Register/ Log In";}?></a></li>
-		  <li><a href="howto.php" target="mainframe">How It Works</a></li>
+	<ul class="menu">
+	  <li><a data-toggle="modal" href="#example"><?php if($_SESSION['login']==TRUE){echo "Log Out";} else {echo "Register/ Log In";}?></a></li>
+	  <li><a href="howto.php" target="mainframe">How It Works</a></li>
           <li><a data-toggle='<?php if($_SESSION['login']==TRUE){echo "null";} else {echo "modal";}?>' href='<?php if($_SESSION['login']==TRUE){echo "./recipes.php";} else {echo "#example";}?>' target="mainframe">Get Recipes</a></li>
           <li><a data-toggle='<?php if($_SESSION['login']==TRUE){echo "null";} else {echo "modal";}?>' href='<?php if($_SESSION['login']==TRUE){echo "./recipes_nu.php";} else {echo "#example";}?>' target="mainframe">Nutrition Analysis</a></li>
           <li><a data-toggle='<?php if($_SESSION['login']==TRUE){echo "null";} else {echo "modal";}?>' href='<?php if($_SESSION['login']==TRUE){echo "./recipes_sl.php";} else {echo "#example";}?>' target="mainframe">Weekly Shopping List</a></li>
@@ -99,19 +92,18 @@ imainframe.height = viewportheight;
       </div>
     </div>
 	
-	<div id="example" class="modal hide fade in" role="dialog" style="display: none; " aria-hidden="true">
-				<div class="modal-body">
-                  <div id="mod">
-                    <div id='fg_membersite_content'>
-				        <iframe src='<?php if($_SESSION['login']==TRUE){echo "./logout.html";} else {echo "./register.html";}?>' scrolling="no" style="text-align:center;"> </iframe>
-                    </div>
-                  </div>
-                </div>            
+    <div id="example" class="modal hide fade in" role="dialog" style="display: none; " aria-hidden="true">
+	<div class="modal-body">
+             <div id="mod">
+                <div id='fg_membersite_content'>
+         	        <iframe src='<?php if($_SESSION['login']==TRUE){echo "./logout.html";} else {echo "./register.html";}?>' scrolling="no" style="text-align:center;"> </iframe>
+                </div>
+              </div>
+        </div>            
     </div>
 
 
     <iframe src="team15_index2.php" name="mainframe" width="100%" onload="Javascript:SetCwinHeight()" id="mainframe" style="overflow-y:scroll;overflow-x:hidden;"></iframe>
-
 	
 	<script type="text/javascript">
 	document.documentElement.style.overflowY = "hidden";

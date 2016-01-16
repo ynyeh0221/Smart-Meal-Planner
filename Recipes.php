@@ -5,9 +5,9 @@
 if($_SESSION['login']==false)
 {
   echo "<script> alert('Please Login. Redirect to index page.'); </script>";
-	session_unset();
+  session_unset();
   session_destroy();
-	echo "<meta http-equiv='Refresh' content='0; URL=./team15_index2.php'>"; 
+  echo "<meta http-equiv='Refresh' content='0; URL=./team15_index2.php'>"; 
 }
 ?>
 
@@ -20,22 +20,22 @@ if($_SESSION['login']==false)
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
   <link href="bootstrap.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Sigmar+One%7CFredericka+the+Great%7CCabin+Sketch%7CDenk+One%7CRacing+Sans+One%7CCarter+One%7CLemon%7CKnewave' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Palanquin:700' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="icon.ico">
-	<link href="recipes.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Sigmar+One%7CFredericka+the+Great%7CCabin+Sketch%7CDenk+One%7CRacing+Sans+One%7CCarter+One%7CLemon%7CKnewave' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Palanquin:700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="icon.ico">
+  <link href="recipes.css" rel="stylesheet">
 	
-	<style>
-	body
-	{
-  		 background-image: url('131.jpg');
-    	 -webkit-background-size: cover;
-     	 -moz-background-size: cover;
-       -o-background-size: cover;
-       background-size: cover;
-  		 background-attachment:fixed;
+  <style>
+  body
+  {
+      background-image: url('131.jpg');
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-attachment:fixed;
   }
-	</style>
+  </style>
 	
  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
  <script type="text/javascript">

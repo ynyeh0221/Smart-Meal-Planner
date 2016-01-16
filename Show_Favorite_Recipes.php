@@ -20,18 +20,18 @@ $op = json_decode($data);
     <meta name="dcterms.created" content="Fri, 13 Nov 2015 01:19:59 GMT">
     <meta name="description" content="">
     <meta name="keywords" content="">
-	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Palanquin:700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
-	<script src=â€jquery-1.9.1â€ type=â€text/javascriptâ€></script>
-    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Palanquin:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
+    <script src=â€jquery-1.9.1â€ type=â€text/javascriptâ€></script>
+    <title>Show Favorite Recipes</title>
     
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 	<style>
 	body{
-      color:white;
+          color:white;
 	  border:none;
 	  padding:15px;
 	  font-family: 'Cabin Condensed', sans-serif;
@@ -40,12 +40,12 @@ $op = json_decode($data);
 	  overflow-y:auto;
 	 }
 	 
-	  submit {
-      margin-top: 20px;
-      font-size: 150%;
-      font-weight: 100;
-      padding: 5px 0;
-      width: 100%;
+	submit {
+          margin-top: 20px;
+          font-size: 150%;
+          font-weight: 100;
+          padding: 5px 0;
+          width: 100%;
 	  }
 
    .float {

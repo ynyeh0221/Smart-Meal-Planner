@@ -47,17 +47,17 @@ else
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $output = curl_exec($ch);
-	if($output == false)
+    if($output == false)
     {
-	    echo "<script> alert('Oops.'); </script>";
-	    echo "<meta http-equiv='Refresh' content='0;URL=./register.html'>"; 
+        echo "<script> alert('Oops.'); </script>";
+        echo "<meta http-equiv='Refresh' content='0;URL=./register.html'>"; 
     }
-	else
-	{
-      $result = json_decode($output,true);	
-	    echo "<script> alert('Welcome!!! Redirecting to Login Page.'); </script>";
-	    echo "<meta http-equiv='Refresh' content='0;URL=./login.html'>";
-	}
+    else
+    {
+        $result = json_decode($output,true);	
+	echo "<script> alert('Welcome!!! Redirecting to Login Page.'); </script>";
+	echo "<meta http-equiv='Refresh' content='0;URL=./login.html'>";
+    }
 }
 
 curl_close($ch);

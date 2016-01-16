@@ -218,10 +218,10 @@ li{
  }
  select
 {
-	font-size: 20.4%;
-    font-family: 'Palanquin', sans-serif;
-	height:6.8px;
-	width:37%;
+ font-size: 20.4%;
+ font-family: 'Palanquin', sans-serif;
+ height:6.8px;
+ width:37%;
 }
 }
 
@@ -315,10 +315,10 @@ li{
  }
  select
 {
-	font-size: 80%;
-    font-family: 'Palanquin', sans-serif;
-	height:26.4px;
-	width:37%;
+ font-size: 80%;
+ font-family: 'Palanquin', sans-serif;
+ height:26.4px;
+ width:37%;
 }
 
 }
@@ -399,10 +399,10 @@ li{
     <li>For each graph, let</li>
 	<li style="font-size:100%;list-style-type: none;">
 	    <ul>
-		    <li><b>N<sub>breakfast, selected nutrition</sub></b> = the amount of selected nutrition provided by today's breakfast,</li>
-			<li><b>N<sub>lunch, selected nutrition</sub></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= the amount of selected nutrition provided by today's lunch,</li>
-		    <li><b>N<sub>dinner, selected nutrition</sub></b>&nbsp; &nbsp;&nbsp;= the amount of selected nutrition provided by today's dinner,</li>
-        </ul>
+		<li><b>N<sub>breakfast, selected nutrition</sub></b> = the amount of selected nutrition provided by today's breakfast,</li>
+		<li><b>N<sub>lunch, selected nutrition</sub></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= the amount of selected nutrition provided by today's lunch,</li>
+		<li><b>N<sub>dinner, selected nutrition</sub></b>&nbsp; &nbsp;&nbsp;= the amount of selected nutrition provided by today's dinner,</li>
+            </ul>
 	</li>
 </ul>
 <ul>
@@ -646,8 +646,8 @@ var rect = layer.selectAll("rect")
     .attr("y", height)
     .attr("width", x.rangeBand())
     .attr("height", 0)
-	.attr("class","bar")
-	.on('mouseover', tip.show)
+    .attr("class","bar")
+    .on('mouseover', tip.show)
     .on('mouseout', tip.hide);
 
 rect.transition()
@@ -657,15 +657,15 @@ rect.transition()
 
 svg.append("g")
     .attr("class", "x axis")
-	.attr("id", "xaxis")
+    .attr("id", "xaxis")
     .attr("transform", "translate(0," + height + ")")
     .call(xAxis);
 	
   svg.append("g")
       .attr("class", "axis axis--y")
-	  .attr("id", "yaxis")
+      .attr("id", "yaxis")
       .call(yAxis)
-	  .append("text")
+      .append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 6)
       .attr("dy", ".71em")
@@ -732,7 +732,7 @@ function transitionStacked() {
       .delay(function(d, i) { return i * 10; })
       .attr("y", function(d) { return y(d.y0 + d.y); })
       .attr("height", function(d) { return y(d.y0) - y(d.y0 + d.y); })
-    .transition()
+      .transition()
       .attr("x", function(d) { return x(d.x); })
       .attr("width", x.rangeBand());
 }

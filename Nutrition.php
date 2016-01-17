@@ -21,11 +21,11 @@ if($_SESSION['login']==false)
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
     <link href="bootstrap.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Sigmar+One%7CFredericka+the+Great%7CCabin+Sketch%7CDenk+One%7CRacing+Sans+One%7CCarter+One%7CLemon%7CKnewave' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Palanquin:700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Special+Elite%7CFredericka+the+Great%7CLove+Ya+Like+A+Sister%7CJosefin+Sans%7COpen+Sans+Condensed:300%7CDosis' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="icon.ico">
-	<link href="recipes.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Sigmar+One%7CFredericka+the+Great%7CCabin+Sketch%7CDenk+One%7CRacing+Sans+One%7CCarter+One%7CLemon%7CKnewave' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Palanquin:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Special+Elite%7CFredericka+the+Great%7CLove+Ya+Like+A+Sister%7CJosefin+Sans%7COpen+Sans+Condensed:300%7CDosis' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="icon.ico">
+    <link href="recipes.css" rel="stylesheet">
     <title>Nuutrition</title>
     
     <!--[if IE]>
@@ -34,27 +34,23 @@ if($_SESSION['login']==false)
 	
 	<!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-  <![endif]-->
+    <![endif]-->
 	
-	<style>
-
-	body
-	{
-  		 background-image: url('130.jpg');
+    <style>
+    body
+    {
+  	 background-image: url('130.jpg');
     	 -webkit-background-size: cover;
      	 -moz-background-size: cover;
        	 -o-background-size: cover;
-          background-size: cover;
-  		  background-attachment:fixed;
+         background-size: cover;
+         background-attachment:fixed;
     }
-	</style>
+    </style>
   </head>
-  <body style="overflow-y:auto;overflow-x:hidden;">  
-  
-  
+  <body style="overflow-y:auto;overflow-x:hidden;">
 
-<div id="d">
-
+  <div id="d">
   <h1 class="title2">Care about daily nutrition intake?</h1>
   <h3 class="subtitle2">Your nutrition intake analysis report!</h3>
   <br>
@@ -75,11 +71,8 @@ if($_SESSION['login']==false)
   <br>
   <br>
   </div>
-
-	
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-   <script src="bootstrap-modal.js"></script>
-   <script src="app3.js"></script>
- 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="bootstrap-modal.js"></script>
+  <script src="app3.js"></script>
   </body>
 </html>

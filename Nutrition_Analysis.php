@@ -280,6 +280,7 @@ else
 
 ?>
 
+<!--The arc graphs are refered from BrightPoint Consulting, Inc-->
 
 <!--
 /**

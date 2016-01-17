@@ -11,7 +11,7 @@ Based on our surveys, 83% users will use our app, and think that our recommendat
 
 HOW DOES SMART MEAL PLANNER WORK?
 
-30000 recipes were obtained from Yummly, cleaned by GoogleRefine, and stored on a MongoDB server on our backend. These recipes were converted into Boolean vectors having one entry per unique ingredient. The pairwise cosine similarity of recipes were computed, and then we clustered the recipes into 200 clusters.
+30000 recipes were obtained from Yummly API, cleaned by GoogleRefine, and stored on a MongoDB server on our backend. These recipes were converted into Boolean vectors having one entry per unique ingredient. The pairwise cosine similarity of recipes were computed, and then we clustered the recipes into 200 clusters.
 
 For each recipe, the maximum similarity to a recipe in the set of favorites picked by the user is found. A 3SUM is run to get all possible sets of three recipes that add up to satisfy the daily recommended nutritional intake for the specific user, and the top seven scoring days that do not overlap in the clusters determined previously are greedy picked.
 

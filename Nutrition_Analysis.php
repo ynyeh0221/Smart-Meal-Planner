@@ -314,12 +314,12 @@ OTHER DEALINGS IN THE SOFTWARE.
     <meta HTTP-EQUIV="X-UA-COMPATIBLE" CONTENT="IE=EmulateIE9" >
     <script type="text/javascript" src="scripts/d3.min.js"></script>
     <script type="text/javascript" src="scripts/radialProgress.js"></script>
-	<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+    <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Palanquin:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Palanquin:700' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="styles/style.css">
-	<link href="bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
     <link href="style3.css" rel="stylesheet">
 	
 <style>
@@ -338,10 +338,10 @@ body{
 @media only screen and (min-width: 300px) {
  select
 {
-	font-size: 31%;
+    font-size: 31%;
     font-family: 'Palanquin', sans-serif;
-	height:10.4px;
-	width:37%;
+    height:10.4px;
+    width:37%;
 }
 }
 
@@ -349,10 +349,10 @@ body{
 @media only screen and (min-width: 768px) {
  select
 {
-	font-size: 80%;
+    font-size: 80%;
     font-family: 'Palanquin', sans-serif;
-	height:26.4px;
-	width:37%;
+    height:26.4px;
+    width:37%;
 }
 }
 
@@ -360,10 +360,10 @@ body{
 @media only screen and (min-width: 1170px) {
  select
 {
-	font-size: 120%;
+    font-size: 120%;
     font-family: 'Palanquin', sans-serif;
-	height:40px;
-	width:37%;
+    height:40px;
+    width:37%;
 }
 }
 	
@@ -371,16 +371,16 @@ body{
 .bgClip {
     background: -webkit-linear-gradient(transparent, transparent), url(133.jpg);
     background: -o-linear-gradient(transparent, transparent);
-	background-repeat:repeat-x;
+    background-repeat:repeat-x;
     background-position:0 0;
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-  	color: black;
-  	text-align:center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    text-align:center;
     font-family:'Racing Sans One', cursive;
-	font-weight: normal; 
-	line-height:80px;
-  	margin: 0;
+    font-weight: normal; 
+    line-height:80px;
+    margin: 0;
     -webkit-animation:BackgroundAnimated 15s linear infinite;
     -moz-animation:BackgroundAnimated 15s linear infinite;
     -ms-animation:BackgroundAnimated 15s linear infinite;
@@ -433,7 +433,7 @@ body{
 }
 </style>
 	
-	<script type='text/javascript'>
+<script type='text/javascript'>
 $(window).load(function(){
 $('.js-open-box').on('click',function(){
     $('.overlay,.box-login').fadeIn(200);
@@ -462,75 +462,75 @@ function resize()
 </head>
 
 <body>
-	<div id="d1" class="modal hide fade in" role="dialog" style="display: none; " aria-hidden="true">
-			<div class="modal-body">
-                  <div >
-                    <div >
-					    <h3 style="text-align:center">Analysis of Energy</h3>
-				        <table align="center" class="table-2">
-						<tr>
-						<th>Gender</th><th>Age</th><th>Weight(kg)/Height(cm)</th>
-						</tr>
-						<tr>
-						<td><?php echo $_SESSION['gender']?></td><td><?php echo $_SESSION['age']?></td><td><?php echo $_SESSION['weight']?>/<?php echo $_SESSION['height']?></td>
-						</tr>
-						<tr>
-						<th></th><th>Recipe Name</th><th>Percentage of DNR</th>
-						</tr>
-						<tr>
-						<th>Breakfast</th><td><a href="../mp/recipes2.php"><?php echo $rname1?></a></td><td><?php if($_SESSION['gender']=='M')
+        <div id="d1" class="modal hide fade in" role="dialog" style="display: none; " aria-hidden="true">
+	  <div class="modal-body">
+                <div >
+                        <div >
+		                <h3 style="text-align:center">Analysis of Energy</h3>
+				<table align="center" class="table-2">
+				<tr>
+				<th>Gender</th><th>Age</th><th>Weight(kg)/Height(cm)</th>
+				</tr>
+				<tr>
+				<td><?php echo $_SESSION['gender']?></td><td><?php echo $_SESSION['age']?></td><td><?php echo $_SESSION['weight']?>/<?php echo $_SESSION['height']?></td>
+				</tr>
+				<tr>
+				<th></th><th>Recipe Name</th><th>Percentage of DNR</th>
+				</tr>
+				<tr>
+				<th>Breakfast</th><td><a href="../mp/recipes2.php"><?php echo $rname1?></a></td><td><?php if($_SESSION['gender']=='M')
                                                                                     echo number_format(($val1_en)/((13.7*$_SESSION['weight'])+(5.0*$_SESSION['height'])-(6.8*$_SESSION['age'])+66)*100,2);
                                                                                  elseif($_SESSION['gender']=='F')
                                                                                     echo number_format(($val1_en)/((9.6*$_SESSION['weight'])+(1.8*$_SESSION['height'])-(4.7*$_SESSION['age'])+655)*100,2); ?> %</td>
-						</tr>
-						<tr>
-						<th>Lunch</th><td><a href="../mp/recipes2.php"><?php echo $rname2?></a></td><td><?php if($_SESSION['gender']=='M')
+				</tr>
+				<tr>
+				<th>Lunch</th><td><a href="../mp/recipes2.php"><?php echo $rname2?></a></td><td><?php if($_SESSION['gender']=='M')
                                                                                     echo number_format(($val2_en)/((13.7*$_SESSION['weight'])+(5.0*$_SESSION['height'])-(6.8*$_SESSION['age'])+66)*100,2);
                                                                                    elseif($_SESSION['gender']=='F')
                                                                                     echo number_format(($val2_en)/((9.6*$_SESSION['weight'])+(1.8*$_SESSION['height'])-(4.7*$_SESSION['age'])+655)*100,2); ?> %</td>
-						</tr>
-						<tr>
-						<th>Dinner</th><td><a href="../mp/recipes2.php"><?php echo $rname3?></a></td><td><?php if($_SESSION['gender']=='M')
+				</tr>
+				<tr>
+				<th>Dinner</th><td><a href="../mp/recipes2.php"><?php echo $rname3?></a></td><td><?php if($_SESSION['gender']=='M')
                                                                                     echo number_format(($val3_en)/((13.7*$_SESSION['weight'])+(5.0*$_SESSION['height'])-(6.8*$_SESSION['age'])+66)*100,2);
                                                                                  elseif($_SESSION['gender']=='F')
                                                                                     echo number_format(($val3_en)/((9.6*$_SESSION['weight'])+(1.8*$_SESSION['height'])-(4.7*$_SESSION['age'])+655)*100,2); ?> %</td>
-						</tr>
-						</table>
-                    </div>
+				</tr>
+				</table>
+                        </div>
                   </div>
             </div>            
-    </div>
+        </div>
 	
-		<div id="d2" class="modal hide fade in" role="dialog" style="display: none; " aria-hidden="true">
-			<div class="modal-body">
+	<div id="d2" class="modal hide fade in" role="dialog" style="display: none; " aria-hidden="true">
+		<div class="modal-body">
                   <div >
                     <div >
-					    <h3 style="text-align:center">Analysis of Protein</h3>
-				        <table align="center" class="table-2">
-						<tr>
-						<th>Gender</th><th>Age</th><th>Weight(kg)/Height(cm)</th>
-						</tr>
-						<tr>
-						<td><?php echo $_SESSION['gender']?></td><td><?php echo $_SESSION['age']?></td><td><?php echo $_SESSION['weight']?>/<?php echo $_SESSION['height']?></td>
-						</tr>
-						<tr>
-						<tr>
-						<th></th><th>Recipe Name</th><th>Percentage of DNR</th>
-						</tr>
-						<tr>
-						<th>Breakfast</th><td><a href="../mp/recipes2.php"><?php echo $rname1?></a></td><td><?php echo number_format($val1_pro/$val_base_pro*100,2) ?> %</td>
-						</tr>
-						<tr>
-						<th>Lunch</th><td><a href="../mp/recipes2.php"><?php echo $rname2?></a></td><td><?php echo number_format($val2_pro/$val_base_pro*100,2) ?> %</td>
-						</tr>
-						<tr>
-						<th>Dinner</th><td><a href="../mp/recipes2.php"><?php echo $rname3?></a></td><td><?php echo number_format($val3_pro/$val_base_pro*100,2) ?> %</td>
-						</tr>
-						</table>
-                    </div>
+			        <h3 style="text-align:center">Analysis of Protein</h3>
+				<table align="center" class="table-2">
+				<tr>
+				<th>Gender</th><th>Age</th><th>Weight(kg)/Height(cm)</th>
+				</tr>
+				<tr>
+				<td><?php echo $_SESSION['gender']?></td><td><?php echo $_SESSION['age']?></td><td><?php echo $_SESSION['weight']?>/<?php echo $_SESSION['height']?></td>
+				</tr>
+				<tr>
+				<tr>
+				<th></th><th>Recipe Name</th><th>Percentage of DNR</th>
+				</tr>
+				<tr>
+				<th>Breakfast</th><td><a href="../mp/recipes2.php"><?php echo $rname1?></a></td><td><?php echo number_format($val1_pro/$val_base_pro*100,2) ?> %</td>
+				</tr>
+				<tr>
+				<th>Lunch</th><td><a href="../mp/recipes2.php"><?php echo $rname2?></a></td><td><?php echo number_format($val2_pro/$val_base_pro*100,2) ?> %</td>
+				</tr>
+				<tr>
+				<th>Dinner</th><td><a href="../mp/recipes2.php"><?php echo $rname3?></a></td><td><?php echo number_format($val3_pro/$val_base_pro*100,2) ?> %</td>
+				</tr>
+				</table>
+                        </div>
                   </div>
             </div>            
-    </div>
+        </div>
 	
 		<div id="d3" class="modal hide fade in" role="dialog" style="display: none; " aria-hidden="true">
 			<div class="modal-body">

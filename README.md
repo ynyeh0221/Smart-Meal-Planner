@@ -4,7 +4,15 @@ DEMO of SMART MEAL PLANNER: https://goo.gl/jXlyjd
 
 ![alt tag](https://github.com/ynyeh0221/Smart-Meal-Planner/blob/master/meals.png)
 
+![alt tag](https://github.com/ynyeh0221/Smart-Meal-Planner/blob/master/meals2.png)
+
 ![alt tag](https://github.com/ynyeh0221/Smart-Meal-Planner/blob/master/analysis1.png)
+
+![alt tag](https://github.com/ynyeh0221/Smart-Meal-Planner/blob/master/analysis2.png)
+
+![alt tag](https://github.com/ynyeh0221/Smart-Meal-Planner/blob/master/analysis3.png)
+
+![alt tag](https://github.com/ynyeh0221/Smart-Meal-Planner/blob/master/analysis4.png)
 
 This is the final project of Data and Visual Analytics, Gatech. Smart Meal Planner--a personalized recipe recommendation app was designed and built based on more than 30000 recipes downloaded from Yummly API.
 

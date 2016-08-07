@@ -2,6 +2,8 @@ DEMO of SMART MEAL PLANNER: https://goo.gl/jXlyjd
 
 ![alt tag](https://github.com/ynyeh0221/Smart-Meal-Planner/blob/master/index.png)
 
+![alt tag](https://github.com/ynyeh0221/Smart-Meal-Planner/blob/master/meals.png)
+
 This is the final project of Data and Visual Analytics, Gatech. Smart Meal Planner--a personalized recipe recommendation app was designed and built based on more than 30000 recipes downloaded from Yummly API.
 
 I am the front-end engineer of this project, and responsible for the register/login/logout system implementation, recommendation system app design, build, and data visualization (interactive personalized nutrition report) with HTML5/CSS3/JavaSript/JQUERY/AJAX/PHP/D3.js. These codes are validated by W3C Markup Validation Service.

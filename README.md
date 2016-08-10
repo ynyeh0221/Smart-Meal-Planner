@@ -1,5 +1,7 @@
 DEMO of SMART MEAL PLANNER: https://goo.gl/jXlyjd
 
+[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://goo.gl/jXlyjd)
+
 ![alt tag](https://github.com/ynyeh0221/Smart-Meal-Planner/blob/master/index.png)
 
 ![alt tag](https://github.com/ynyeh0221/Smart-Meal-Planner/blob/master/meals.png)
